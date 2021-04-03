@@ -12,6 +12,8 @@ my intention going in:
 guess first step to all of this is to scrape the data, I think some websites worth starting to look in might be:
 
 - http://ufcstats.com/statistics/fighters
-- ... actually that one has pretty much all i really need once I boil it down.
+- https://www.sherdog.com/events 
+
+sherdog has stats from fights / fighters outside the ufc. its T&Cs aso dont claim they will stop you from scraping whereas ufcstats does. unfortunately, ufcstats appears to be the better datasource for per fight breakdowns. I think I'll need to decide on what the dashboard is *for* before I am able to finalise which of the two I will scrape. may as well write spiders for both though right, just in case ;) 
 
 I think once we've scraped, it might be worth seeing if any kind of cleaning / classifying / general wrangling work on the data can be built into a pipeline since that also seems quite useful and given the nture of the sport as an ongoing narative it makes sense that any given data set that i produce wouldnt be like the *final* dataset but rather just the current one.
