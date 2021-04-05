@@ -22,5 +22,7 @@ I think once we've scraped, it might be worth seeing if any kind of cleaning / c
 scratch the scraping for now, theres an up to date kaggle dataset that looks like it might at least get me started - its built on a per fight dynamically updating basis though so I'll have to buil a method of converting it to fighter based statistics which adds to the charm ey ;)
 this dataset is located by here https://www.kaggle.com/mdabbert/ultimate-ufc-dataset full credit to those guys for putting it together the bunch of top slammers
 
+NEXT UP:
 
-
+- test the functions
+- add a column for fighters gym / home country if possible

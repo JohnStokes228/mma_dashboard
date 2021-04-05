@@ -4,10 +4,12 @@ Some wrangling will probs be required. Maybe a cheeky bit of slap and tickle as 
 
 TODO: - identify what columns should be salvaged and how  <- more likely I'll be adding than taking away tbh
       - write pipeline for preforming the transformation  <- 1/2 done
+      - add bonus per fighter data which is conspicuously missing <- where will i source this bastard?
       - build tests where necessary  <- so far nothing test worthy :(
       - set up sphinx docs <- looks like we need something to allow for numpy docs
 """
 import pandas as pd
+import numpy as np
 import hashlib
 from typing import List, Tuple
 
@@ -100,7 +102,6 @@ def split_df_by_col(
     -----
     We need to maintain the knowledge of which corner the fighter came from as some columns such as 'winner' are given
     to the corner not the fighter. For now, this will be done by adding a 'corner' column.
-    TODO: convert these columns to binary where appropriate? or at least make them not corner dependant...
 
     Returns
     -------
@@ -124,6 +125,52 @@ def split_df_by_col(
     return per_fighter_df
 
 
+def red_blue_converter(
+    corner_col: str,
+    comp_col: str,
+) -> str:
+    """Convert corner focused column into fighter focused column.
+
+    Parameters
+    ----------
+    corner_col : Value of the corner.
+    comp_col : Value of the column to be converted.
+
+    Returns
+    -------
+    Corrected column value.
+    """
+    if comp_col == corner_col:
+        fixed_col = 1
+    elif comp_col not in [np.NaN, 'neither']:
+        fixed_col = 0
+    else:
+        fixed_col = comp_col
+
+    return fixed_col
+
+
+def standardise_cols(df: pd.DataFrame) -> pd.DataFrame:
+    """Set date to datetime since where else are you going to do that, standardise the columns containing Red / Blue
+    values into something more useful.
+
+    Parameters
+    ----------
+    df : Input df.
+
+    Returns
+    -------
+    Fixed column version of input df.
+    """
+    df['date'] = pd.to_datetime(df['date'])
+    df['Winner'] = df.apply(lambda x: red_blue_converter(x.corner, x.Winner), axis=1)
+    df['better_rank'] = df.apply(lambda x: red_blue_converter(x.corner, x.better_rank), axis=1)
+
+    df.loc[df.finish_details.isin(['Red', 'Blue', 'neither']), 'finish_details'] = np.NaN
+
+    return df
+
+
 def create_per_fighter_df() -> pd.DataFrame:
     """Read in and split the master data into a per fighter dataframe.
 
@@ -137,6 +184,7 @@ def create_per_fighter_df() -> pd.DataFrame:
     blue_corner_df = split_df_by_col(df, exc_substring='R_', inc_substring='B_', corner='Blue')
 
     df = pd.concat([red_corner_df, blue_corner_df])
+    df = standardise_cols(df)
 
     return df
 
