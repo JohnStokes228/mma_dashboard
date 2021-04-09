@@ -4,7 +4,7 @@ Some wrangling will probs be required. Maybe a cheeky bit of slap and tickle as 
 
 TODO: - identify what columns should be salvaged and how  <- more likely I'll be adding than taking away tbh
       - write pipeline for preforming the transformation  <- 1/2 done
-      - add bonus per fighter data which is conspicuously missing <- where will i source this bastard?
+      - scrape wiki bastard pedia for the extra data i crave (country_of_origin / gym)
       - build tests where necessary  <- so far nothing test worthy :(
       - set up sphinx docs <- looks like we need something to allow for numpy docs
 """
@@ -12,6 +12,7 @@ import pandas as pd
 import numpy as np
 import hashlib
 from typing import List, Tuple
+# from pipeline_code.scraped_to_csv import create_nationality_df
 
 
 def set_mixed_dtype_to_int(
@@ -166,7 +167,7 @@ def standardise_cols(df: pd.DataFrame) -> pd.DataFrame:
     df['Winner'] = df.apply(lambda x: red_blue_converter(x.corner, x.Winner), axis=1)
     df['better_rank'] = df.apply(lambda x: red_blue_converter(x.corner, x.better_rank), axis=1)
 
-    df.loc[df.finish_details.isin(['Red', 'Blue', 'neither']), 'finish_details'] = np.NaN
+    df.loc[df.finish_details.isin(['Red', 'Blue', 'neither']), 'finish_details'] = np.NaN  # scrub the filth!
 
     return df
 
@@ -190,4 +191,4 @@ def create_per_fighter_df() -> pd.DataFrame:
 
 
 if __name__ == '__main__':
-    pass  # This will eventually run the bloody bastard pipeline.
+    pass
