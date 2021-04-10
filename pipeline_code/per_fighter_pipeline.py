@@ -2,17 +2,29 @@
 The data as downloaded is on a mostly per fight basis, we'd like to convert it into a per fighter form of some sort.
 Some wrangling will probs be required. Maybe a cheeky bit of slap and tickle as well, who knows...
 
+I've scraped some additional data from wikipedia, but due to the websites rather chaotic nature some amount of post
+processing is required to get it into a shape where it can be joined to the rest of the data. I wont save these to csv
+alone, but rather as part of the merged master file, just to cut down on excess files and since I know if i need to
+repeat the scrape that the data will need re transforming.
+
+The camp data is both the hardest to make useful and the least useful once transformed so hurray for wasted efforts I
+guess.
+
 TODO: - identify what columns should be salvaged and how  <- more likely I'll be adding than taking away tbh
       - write pipeline for preforming the transformation  <- 1/2 done
-      - scrape wiki bastard pedia for the extra data i crave (country_of_origin / gym)
-      - build tests where necessary  <- so far nothing test worthy :(
+      - build tests where necessary  <- built a few I guess...
       - set up sphinx docs <- looks like we need something to allow for numpy docs
+      - complete_df has extra rows in it <- looks like at least one fighter has multiple nationalities <<- generic name?
+      - determine fighters discipline / background <- label a fighter as wrestler, grappler, striker or combination
+      - clean where appropriate...
+
 """
 import pandas as pd
 import numpy as np
 import hashlib
-from typing import List, Tuple
-# from pipeline_code.scraped_to_csv import create_nationality_df
+import json
+import re
+from typing import List, Tuple, Dict
 
 
 def set_mixed_dtype_to_int(
@@ -190,5 +202,175 @@ def create_per_fighter_df() -> pd.DataFrame:
     return df
 
 
+def json_to_dict(filepath: str) -> Dict[str, object]:
+    """Read in json data as dictionary.
+
+    Parameters
+    ----------
+    filepath : path to json data.
+
+    Returns
+    -------
+    JSON data as a python dictionary, as i cant be arsed to rewrite the same two lines of code over and over.
+    """
+    with open(filepath) as json_file:
+        data_dict = json.load(json_file)
+
+    return data_dict
+
+
+def get_proper_nouns(input_string: str) -> str:
+    """Pull proper nouns (other than the word flag because nah mate to that) from an input string.
+
+    Parameters
+    ----------
+    input_string : some string containing some proper nouns.
+
+    Notes
+    -----
+    Function returns strictly the alphabetic characters of the input string so for instance 'John123' would return only
+    'John'. This is also true for special characters i.e. 'Suflé' would yield 'Sufl'. This is fine for our purposes as
+    my web scrapers already unidecode the strings they scrape to avoid issues such as this but for data not coming from
+    my own scrapers, unidecode-ing the input string first would be strongly recommended.
+
+    Returns
+    -------
+    Whitespace separated proper nouns from the input string.
+    """
+    input_string = input_string.replace('Flag of', '')
+    proper_nouns = re.findall('([A-Z][a-z]*)', input_string)
+    proper_nouns = ' '.join(proper_nouns)
+
+    if proper_nouns[-1] == 'C':
+        proper_nouns = proper_nouns[:-2]  # remove annoying capital C in fighter name for current champs
+
+    return proper_nouns
+
+
+def split_string_list(variables_string: str) -> List[str]:
+    """Transform the input lists into something usable.
+
+    Parameters
+    ----------
+    variables_string : A single string with a bunch of flag file names in.
+
+    Returns
+    -------
+    An ordered list of variables.
+    """
+    variables_string = variables_string.split(',')
+    variable_list = [get_proper_nouns(variable) for variable in variables_string]
+
+    return variable_list
+
+
+def create_nationality_df() -> pd.DataFrame:
+    """Transform raw scraped wikipedia fighter nationality json data into a usable pandas df.
+
+    Returns
+    -------
+    Pandas dataframe of per fighter nationality.
+    """
+    nationalities_dict = json_to_dict('data/wikipedia-nationalities.json')
+
+    nationalities_dict['country_of_origin'] = split_string_list(nationalities_dict['country_of_origin'][0])
+    nationalities_dict['fighter'] = split_string_list(nationalities_dict['fighter'][0])
+
+    nationalities_df = pd.DataFrame.from_dict(nationalities_dict)
+
+    return nationalities_df
+
+
+def create_gym_dict() -> Dict[str, List[str]]:
+    """Transform raw scraped wikipedia gym json data into a usable pandas df.
+
+    Notes
+    -----
+    I delete the 'coaches' data since it required cleaning, would still eb a list per fighter, would only be filled for
+    some fighters and, prehaps most importantly, the coaches are per gym meaning they don't really add any extra info
+    compared to just the camp itself. I delete 'previous_fighters' for now as it gets in the way but may come back and
+    reinstate it at some point as there's really not reason to other than convenience.
+
+    Returns
+    -------
+    Pandas dataframe of per fighter gyms.
+    """
+    gyms_dict = json_to_dict('data/wikipedia-camps.json')
+    del gyms_dict['coaches']
+    del gyms_dict['previous_fighters']
+
+    gyms_dict['camp_location'] = gyms_dict['camp_location'][0].split(' , ')
+    gyms_dict['camp_country'] = [re.sub(r'[^a-zA-Z ]+', '', loc.split(', ')[-1]) for loc in gyms_dict['camp_location']]
+    gyms_dict['camp_city'] = [loc.split(',')[0] for loc in gyms_dict['camp_location']]
+    del gyms_dict['camp_location']
+
+    gyms_dict['camp'] = gyms_dict['camp'][0].split(', ')
+    gyms_dict['camp'] = [re.sub(r'[^a-zA-Z ]+', '', camp) for camp in gyms_dict['camp']]
+
+    gyms_dict['current_fighters'] = gyms_dict['current_fighters'][0].split(', ')
+
+    return gyms_dict
+
+
+def fighters_in_list(
+        fighters_list: List[str],
+        input_fighters: str,
+) -> List[str]:
+    """Replace an input string with a list of every fighters name contained in that string.
+
+    Parameters
+    ----------
+    fighters_list : List of all fighters from nationality_df, which is hopefully all the fighters?
+    input_fighters : String of fighters names which are sometimes not separated by whitespace but sometimes are.
+
+    Returns
+    -------
+    List of all fighters from nationality_df that were mentioned in input_fighters
+    """
+    return [fighter for fighter in fighters_list if fighter in input_fighters]
+
+
+def create_gyms_df(fighters_list: List[str]) -> pd.DataFrame:
+    """Read in gym data as dict then transform into exploded pandas df, using a list of known fighters to extract the
+    relevant values.
+
+    Parameters
+    ----------
+    fighters_list : A comprehensive list of all known fighters to compare against.
+
+    Returns
+    -------
+    A dataframe containing a list of all current fighters at each major MMA gym according to wikipedia.
+    """
+    gyms_dict = create_gym_dict()
+    gyms_dict['fighter'] = [
+        fighters_in_list(fighters_list, gym_fighters) for gym_fighters in gyms_dict['current_fighters']
+    ]
+    del gyms_dict['current_fighters']
+    gyms_df = pd.DataFrame.from_dict(gyms_dict)
+    gyms_df = gyms_df.explode('fighter')
+
+    return gyms_df
+
+
+def complete_fighter_df() -> pd.DataFrame:
+    """Bring together the wikipedia bonus data and the master data into a single dataframe.
+
+    Returns
+    -------
+    Dataframe containing gym and nationality data per fighter.
+    """
+    nationality_df = create_nationality_df()
+    per_fighter_df = create_per_fighter_df()
+    fighters_list = list(per_fighter_df['fighter'].unique())
+    gyms_df = create_gyms_df(fighters_list)
+
+    complete_df = pd.merge(per_fighter_df, nationality_df, on='fighter', how='left')
+    complete_df = pd.merge(complete_df, gyms_df, on='fighter', how='left')
+
+    return complete_df
+
+
 if __name__ == '__main__':
-    pass
+    fighter_df = complete_fighter_df()
+    fighter_df.to_csv('data/complete_per_fighter.csv', index=False)

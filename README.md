@@ -1,11 +1,11 @@
 # mma_dashboard
+This project is to build some kind of visualisation dashboard for some so far undefined MMA data that I'll need to source from somewhere at some point...
 
 my intention going in:
 
 - scrape some MMA data, because all the buffest guys and the hottest chicks dig MMA data
-- attempt to build an anlysis dashboard for the resultant data (plotly? streamlit?) as i have no experience doing this and it seems like an employable skill to have
+- attempt to build an analysis dashboard for the resultant data (plotly? streamlit?) as i have no experience doing this and it seems like an employable skill to have
 - maybe look into some kind of database solution for the data?
-- maybe try to answer some meaningful questions this time?
 - maybe try to derive some sense of accomplishment from whatever mess is produced?
 - to take the rest of the code to the next level, I'd like to implement pep484 in the docstrings, pytest for the unit tests and sphinx for documentation
 
@@ -20,9 +20,15 @@ I think once we've scraped, it might be worth seeing if any kind of cleaning / c
 
 
 scratch the scraping for now, theres an up to date kaggle dataset that looks like it might at least get me started - its built on a per fight dynamically updating basis though so I'll have to buil a method of converting it to fighter based statistics which adds to the charm ey ;)
-this dataset is located by here https://www.kaggle.com/mdabbert/ultimate-ufc-dataset full credit to those guys for putting it together the bunch of top slammers
+this dataset is located by here https://www.kaggle.com/mdabbert/ultimate-ufc-dataset full credit to those guys for putting it together the bunch of top slammers. 
+I have actually scraped some extra bits from wikipedia for the sake of completeness by now...
+
+looooool just found a source for fighters disciplines: 
+https://ea-ufc-mobile.fandom.com/wiki/Category:Fighters_By_Style
+yep thats right its ea's ufc game. sinking to new lows every day bois... In all seriousness this will again need cleaning but should solve our little issue so yeah sod it lets go.
+unfortunately it does only contain around 330 / 1500 total fighters, and that includes at least 10 khabibs...
 
 NEXT UP:
 
-- test the functions
-- add a column for fighters gym / home country if possible
+- eda / cleaning 
+- decide how to build this fatty dashboard
