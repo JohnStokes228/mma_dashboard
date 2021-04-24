@@ -15,8 +15,7 @@ TODO: - identify what columns should be salvaged and how  <- more likely I'll be
       - build tests where necessary  <- built a few I guess...
       - set up sphinx docs <- looks like we need something to allow for numpy docs
       - complete_df has extra rows in it <- looks like at least one fighter has multiple nationalities <<- generic name?
-      - determine fighters discipline / background <- label a fighter as wrestler, grappler, striker or combination
-      - clean where appropriate...
+      - clean where appropriate... <- 'derrick' needs a clean lads
 
 """
 import pandas as pd
@@ -277,6 +276,7 @@ def create_nationality_df() -> pd.DataFrame:
     nationalities_dict['fighter'] = split_string_list(nationalities_dict['fighter'][0])
 
     nationalities_df = pd.DataFrame.from_dict(nationalities_dict)
+    nationalities_df = nationalities_df.groupby(['fighter']).first().reset_index()
 
     return nationalities_df
 
@@ -334,6 +334,12 @@ def create_gyms_df(fighters_list: List[str]) -> pd.DataFrame:
     """Read in gym data as dict then transform into exploded pandas df, using a list of known fighters to extract the
     relevant values.
 
+    Notes
+    -----
+    We take the first gym a fighter appears in to be truth to avoid duplication of rows. This may not strictly
+    speaking be the most useful way to construct the data, but short term it allows us to build the data into a testable
+    state. This might be something to revise in future...
+
     Parameters
     ----------
     fighters_list : A comprehensive list of all known fighters to compare against.
@@ -349,8 +355,24 @@ def create_gyms_df(fighters_list: List[str]) -> pd.DataFrame:
     del gyms_dict['current_fighters']
     gyms_df = pd.DataFrame.from_dict(gyms_dict)
     gyms_df = gyms_df.explode('fighter')
+    gyms_df = gyms_df.groupby(['fighter']).first().reset_index()
 
     return gyms_df
+
+
+def create_disciplines_df() -> pd.DataFrame:
+    """Read it in and clean it up mucky pup.
+
+    Returns
+    -------
+    One clean discipline df goddamnit.
+    """
+    disciplines_df = pd.read_csv('data/disciplines_breakdown.csv')
+
+    disciplines_df['primary_discipline'] = disciplines_df['primary_discipline'].fillna('mixed')
+    disciplines_df.fillna(0, inplace=True)
+
+    return disciplines_df
 
 
 def complete_fighter_df() -> pd.DataFrame:
@@ -364,9 +386,11 @@ def complete_fighter_df() -> pd.DataFrame:
     per_fighter_df = create_per_fighter_df()
     fighters_list = list(per_fighter_df['fighter'].unique())
     gyms_df = create_gyms_df(fighters_list)
+    disciplines_df = create_disciplines_df()
 
     complete_df = pd.merge(per_fighter_df, nationality_df, on='fighter', how='left')
     complete_df = pd.merge(complete_df, gyms_df, on='fighter', how='left')
+    complete_df = pd.merge(complete_df, disciplines_df, on='fighter', how='left')
 
     return complete_df
 
@@ -374,3 +398,4 @@ def complete_fighter_df() -> pd.DataFrame:
 if __name__ == '__main__':
     fighter_df = complete_fighter_df()
     fighter_df.to_csv('data/complete_per_fighter.csv', index=False)
+    print('Created per fighter df successfully!')

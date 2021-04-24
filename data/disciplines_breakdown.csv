@@ -1,0 +1,1679 @@
+fighter,primary_discipline,boxer,wrestler,thai_boxer,kickboxer,karateka,judoka,mixed_martial_artist,taekwondoin,kung_fu_jia,jiujitiero,sambo_practitioner,g_in_a_gi,capoeira_artist,striking_arts,wrestling_arts
+Alistair Overeem,kickboxing,0,0,1,1,0,1,0,0,0,1,0,0,0,2,1
+Cory Sandhagen,kickboxing,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+Alexandre Pantoja,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Diego Ferreira,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+Michael Johnson,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Mike Rodriguez,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Molly McCann,mixed,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+SeungWoo Choi,muay thai,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Dustin Poirier,boxing,1,1,0,0,0,0,1,0,0,1,0,1,0,1,1
+Dan Hooker,muay thai,0,0,1,1,0,0,0,0,0,1,0,0,0,2,0
+Jessica Eye,boxing,1,0,1,1,0,0,1,0,0,0,0,0,0,3,0
+Andrew Sanchez,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Marina Rodriguez,muay thai,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Brad Tavares,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Julianna Pena,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Khalil Rountree Jr.,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Nik Lentz,wrestling,0,1,0,0,0,0,1,0,1,1,0,0,0,1,1
+Amir Albazi,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michael Chiesa,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Warlley Alves,kickboxing,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+Ike Villanueva,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Roxanne Modafferi,jiu jitsu,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1
+Matt Schnell,mixed,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Lerone Murphy,mixed,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Omari Akhmedov,sambo,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Ricky Simon,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Su Mudaerji,mixed,0,0,0,1,0,0,1,0,1,0,0,0,0,2,0
+Dalcha Lungiambula,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Francisco Figueiredo,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Mike Davis,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Umar Nurmagomedov,sambo,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1
+Victoria Leonardo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Max Holloway,kickboxing,1,0,0,1,0,0,1,0,0,1,0,1,0,2,0
+Carlos Condit,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Santiago Ponzinibbio,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Joaquin Buckley,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Punahele Soriano,mixed,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Wu Yanan,kickboxing,0,0,0,1,0,0,1,0,1,0,0,0,0,2,0
+Carlos Felipe,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+David Zawada,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sarah Moras,mixed,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jacob Kilburn,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Stephen Thompson,karate,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Jose Aldo,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,1,2,0
+Michel Pereira,jiu jitsu,0,0,0,0,1,0,1,0,0,1,0,0,1,2,0
+Marlon Moraes,muay thai,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+Marcin Tybura,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Anthony Pettis,muay thai,0,1,1,0,0,0,0,1,0,0,0,0,1,3,1
+Sijara Eubanks,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Deron Winn,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Gillian Robertson,jiu jitsu,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+Tafon Nchukwi,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jimmy Flick,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Christos Giagos,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Tony Ferguson,kung fu,1,1,0,0,0,0,1,0,1,1,0,1,0,2,1
+Mackenzie Dern,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kevin Holland,kung fu,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Junior Dos Santos,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0
+Cub Swanson,mixed,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+Renato Moicano,jiu jitsu,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+Gavin Tucker,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tecia Torres,taekwondo,0,0,0,0,1,0,1,1,0,1,0,0,0,2,0
+Chase Hooper,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Jack Hermansson,wrestling,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1
+Ovince Saint Preux,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Gabriel Benitez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roman Dolidze,jiu jitsu,0,1,0,0,0,0,0,0,0,1,1,0,0,0,2
+Louis Smolka,mixed,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1
+Matt Wiman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ilia Topuria,mixed,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Gian Villante,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Anthony Smith,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Miguel Baeza,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Josh Parisian,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Spike Carlyle,karate,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1
+Ashlee Evans-Smith,mixed,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+Jonathan Pearce,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Martin Day,taekwondo,1,0,0,1,0,0,1,1,0,0,0,0,0,3,0
+Gina Mazany,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Luke Sanders,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Deiveson Figueiredo,wrestling,0,1,0,1,0,0,1,0,0,0,0,0,1,2,1
+Valentina Shevchenko,kickboxing,0,0,1,1,0,0,0,0,0,0,0,0,0,2,0
+Mike Perry,boxing,1,0,0,0,0,0,1,0,0,1,0,1,0,1,0
+Katlyn Chookagian,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Mauricio Rua,jiu jitsu,1,1,1,0,0,0,0,0,0,1,0,0,0,2,1
+Brandon Moreno,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Antonina Shevchenko,kickboxing,0,0,1,1,0,0,0,0,0,0,0,0,0,2,0
+Daniel Rodriguez,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Alan Jouban,muay thai,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1
+Kyle Daukaus,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Louis Cosce,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Paul Felder,karate,0,0,1,0,1,0,1,1,0,1,0,0,0,3,0
+Abdul Razak Alhassan,judo,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Kay Hansen,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Brendan Allen,jiu jitsu,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+Ashley Yoder,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Morono,jiu jitsu,1,0,1,1,0,0,0,1,0,1,0,0,0,4,0
+Randa Markos,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Geraldo de Freitas,jiu jitsu,1,0,1,0,0,0,0,0,0,1,0,0,0,2,0
+Don'Tale Mayes,judo,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1
+Thiago Santos,capoeira,0,0,1,0,0,0,0,0,0,1,0,0,1,2,0
+Andrei Arlovski,sambo,0,0,0,1,0,1,1,0,0,0,1,1,0,1,2
+Raoni Barcelos,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Claudia Gadelha,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Trevin Giles,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Giga Chikadze,karate,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Alexandr Romanov,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Darren Elkins,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Max Griffin,taekwondo,0,0,0,1,0,0,0,1,1,0,0,0,0,3,0
+Gustavo Lopez,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Uriah Hall,karate,0,0,0,1,1,0,1,0,0,1,0,0,0,2,0
+Bryce Mitchell,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Maurice Greene,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bobby Green,wrestling,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
+Chris Gruetzemacher,wrestling,0,1,1,0,0,0,1,0,0,1,0,0,0,1,1
+Adrian Yanez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sean Strickland,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Cole Williams,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dustin Jacoby,kickboxing,0,1,0,1,0,0,0,1,0,0,0,0,0,2,1
+Miles Johns,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Khabib Nurmagomedov,sambo,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Robert Whittaker,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Alexander Volkov,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Jacob Malkoun,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lauren Murphy,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Magomed Ankalaev,sambo,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+Stefan Struve,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nathaniel Wood,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Oliveira,muay thai,0,0,1,0,0,0,1,0,0,1,0,1,0,1,0
+Liana Jojua,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Joel Alvarez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brian Ortega,jiu jitsu,0,0,1,0,0,0,0,0,0,1,0,1,0,1,0
+Jimmy Crute,mixed,0,0,0,0,1,1,1,0,0,1,0,0,0,1,1
+Claudio Silva,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Thomas Almeida,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Mateusz Gamrot,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Junyong Park,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jamie Mullarkey,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Gadzhimurad Antigulov,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Said Nurmagomedov,sambo,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+Edson Barboza,muay thai,1,0,1,0,0,0,0,0,0,1,0,0,0,2,0
+Ben Rothwell,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Markus Perez,kung fu,0,0,1,0,0,0,1,0,1,1,0,0,0,2,0
+Tom Aspinall,jiu jitsu,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+Youssef Zalal,kickboxing,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0
+Tom Breese,jiu jitsu,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Chris Daukaus,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Impa Kasanganay,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ali AlQaisi,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tracy Cortez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bruno Silva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Holly Holm,kickboxing,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+Yorgan De Castro,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Germaine de Randamie,muay thai,1,0,1,1,0,0,0,0,0,0,0,0,0,3,0
+Kyler Phillips,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dequan Townsend,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jordan Williams,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Loma Lookboonmee,muay thai,1,0,1,1,0,0,1,0,0,0,0,0,0,3,0
+Casey Kenney,judo,0,1,0,0,0,1,0,0,0,1,0,0,0,0,2
+Luigi Vendramini,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Israel Adesanya,kickboxing,1,0,1,1,0,0,1,0,0,0,0,0,0,3,0
+Dominick Reyes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kai Kara-France,muay thai,1,0,1,1,0,0,1,0,0,1,0,0,0,3,0
+Ketlen Vieira,jiu jitsu,0,1,0,0,0,1,0,0,0,1,0,0,0,0,2
+Hakeem Dawodu,muay thai,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0
+Brad Riddell,muay thai,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Diego Sanchez,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Shane Young,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+William Knight,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Juan Espino,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Khadis Ibragimov,mixed,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Colby Covington,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Khamzat Chimaev,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Johnny Walker,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jordan Espinosa,wrestling,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1
+Mirsad Bektic,boxing,1,0,0,0,1,0,1,0,0,0,0,0,0,2,0
+Mayra Bueno Silva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jessica-Rose Clark,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Darrick Minner,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Journey Newson,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Andre Ewell,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Tyson Nam,judo,1,0,0,1,0,1,0,0,0,0,0,0,0,2,1
+Michelle Waterson,karate,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Ottman Azaitar,kickboxing,1,0,1,1,0,0,0,0,0,0,0,0,0,3,0
+Ed Herman,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Billy Quarantillo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Julia Avila,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Roosevelt Roberts,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Brok Weaver,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Bryan Barberena,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sabina Mazo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brian Kelleher,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Andre Muniz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Viviane Araujo,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Cole Smith,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Robbie Lawler,karate,0,0,0,0,1,0,1,1,0,0,0,0,0,2,0
+Ji Yeon Kim,kung fu,0,0,0,1,0,0,1,0,1,0,0,0,0,2,0
+Ricardo Lamas,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Maki Pitolo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mallory Martin,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alessio Di Chirico,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Caceres,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Polyana Viana,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Sean Brady,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Pedro Munhoz,karate,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1
+Marcin Prachnio,karate,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Mariya Agapova,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Amanda Lemos,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Austin Hubbard,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Carlton Minus,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Timur Valiev,sambo,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1
+Stipe Miocic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sean O'Malley,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Dodson,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jim Miller,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Felice Herrig,muay thai,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Herbert Burns,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+TJ Brown,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Derrick Lewis,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Yana Kunitskaya,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Beneil Dariush,muay thai,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+Tim Means,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Nasrat Haqparast,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Irwin Rivera,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Derek Brunson,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Joanne Calderwood,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Vicente Luque,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Lando Vannata,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Frankie Saenz,wrestling,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
+Johnny Munoz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jamall Emmers,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Fabricio Werdum,mixed,0,0,1,0,0,1,0,0,0,1,0,0,0,1,1
+Carla Esparza,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Paul Craig,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Francisco Trinaldo,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Nicolas Dalby,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Movsar Evloev,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Tanner Boser,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Bethe Correia,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ramazan Emeev,sambo,0,1,0,0,0,0,1,0,0,0,1,0,0,0,2
+Marc Diakiese,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Ariane Lipski,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Grant Dawson,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Joe Duffy,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Brett Johns,jiu jitsu,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Malcolm Gordon,jiu jitsu,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Davi Ramos,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Calvin Kattar,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Tim Elliott,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jimmie Rivera,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+John Phillips,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ricardo Ramos,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Modestas Bukauskas,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Jared Gordon,boxing,1,1,1,0,0,0,1,0,0,1,0,0,0,2,1
+Diana Belbita,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Jack Shore,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kamaru Usman,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Alexander Volkanovski,mixed,0,1,1,1,0,0,1,0,0,0,0,0,0,2,1
+Petr Yan,taekwondo,1,0,0,0,0,0,0,1,0,0,0,1,0,2,0
+Jessica Andrade,judo,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Amanda Ribas,jiu jitsu,0,0,1,0,0,1,0,0,0,1,0,0,0,1,1
+Volkan Oezdemir,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Elizeu Zaleski dos Santos,capoeira,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+Makwan Amirkhani,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Leonardo Santos,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Raulian Paiva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Karol Rosa,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Luis Pena,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mara Romero Borella,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Philipe Lins,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Sean Woodson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Takashi Sato,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Jordan Griffin,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Curtis Blaydes,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Josh Emmett,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Raquel Pennington,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Belal Muhammad,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Clay Guida,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Marc-Andre Barriault,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cortney Casey,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Frank Camacho,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Karl Roberson,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Charles Rosa,karate,1,0,0,1,1,0,1,0,0,0,0,0,0,3,0
+Andre Fili,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Merab Dvalishvili,sambo,0,1,0,0,0,0,0,0,0,0,1,0,0,0,2
+Anthony Ivy,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Amanda Nunes,karate,1,0,0,0,1,0,0,0,0,1,0,0,0,2,0
+Raphael Assuncao,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Aljamain Sterling,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Neil Magny,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Eddie Wineland,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Ian Heinisch,wrestling,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+Cody Stamann,wrestling,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1
+Charles Byrd,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jussier Formiga,mixed,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Alonzo Menifield,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Evan Dunham,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tyron Woodley,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Blagoy Ivanov,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Jamahal Hill,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chris Gutierrez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dan Ige,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Krzysztof Jotko,wrestling,0,1,0,0,0,1,0,0,0,0,0,0,0,0,2
+Song Yadong,kung fu,0,0,0,1,0,0,1,0,1,0,0,0,0,2,0
+Nate Landwehr,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rodrigo Nascimento,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alexander Hernandez,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Hunter Azure,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Chase Sherman,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Ryan Spann,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Aleksei Oleinik,wrestling,0,1,0,1,0,0,1,0,0,1,0,0,0,1,1
+Henry Cejudo,wrestling,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1
+Francis Ngannou,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Jeremy Stephens,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Greg Hardy,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kevin Lee,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Demian Maia,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Elizeu Dos Santos,capoeira,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+Veronica Macedo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Weili Zhang,kung fu,0,1,1,1,0,0,1,0,1,0,0,0,0,3,1
+Mark Madsen,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Rodolfo Vieira,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Gerald Meerschaert,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Danaa Batgerel,muay thai,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Joseph Benavidez,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Felicia Spencer,taekwondo,0,0,0,1,0,0,1,1,0,1,0,0,0,2,0
+Ion Cutelaba,sambo,0,1,0,0,0,1,0,0,0,0,1,0,0,0,3
+Megan Anderson,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Gabriel Silva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Aalon Cruz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jim Crute,karate,0,0,0,0,1,1,1,0,0,1,0,0,0,1,1
+Karolina Kowalkiewicz,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Ben Sosoli,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Kevin Aguilar,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jalin Turner,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jake Matthews,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Callan Potter,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kai Kara France,muay thai,0,0,1,1,0,0,1,0,0,1,0,0,0,2,0
+Priscila Cachoeira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Drew Dober,muay thai,0,1,1,0,0,1,1,1,0,0,0,0,0,2,2
+Eryk Anders,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Emily Whitmire,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Andrea Lee,karate,0,0,1,0,1,0,1,1,0,1,0,0,0,3,0
+Allen Crowder,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jon Jones,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Jorge Masvidal,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Jan Blachowicz,judo,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Gilbert Melendez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marlon Vera,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Caludia Gadelha,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Alejandro Perez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Edmen Shahbazyan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ismail Naurdiev,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Corey Anderson,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Montana De La Rosa,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Rogerio Bontorin,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Devin Clark,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Macy Chiasson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mark De La Rosa,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Germaine De Randamie,kickboxing,1,0,1,1,0,0,0,0,0,0,0,0,0,3,0
+Urijah Faber,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Marvin Vettori,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Liu Pingyuan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Livinha Souza,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Benito Lopez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rafael Dos Anjos,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+James Vick,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Sam Alvey,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Ray Borg,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mario Bautista,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Domingo Pilarte,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cris Cyborg,muay thai,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+Geoff Neal,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Olivier Aubin-Mercier,judo,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+Alexis Davis,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Erik Koch,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Joaquim Silva,mixed,1,0,1,0,0,0,1,0,0,1,0,0,0,2,0
+Scott Holtzman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Darko Stosic,judo,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1
+Mickey Gall,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Miranda Granger,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Juan Adams,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Austin Lingo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vincente Luque,karate,0,0,1,0,1,0,1,0,0,1,0,0,0,2,0
+Luiz Garagorri,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Enrique Barzola,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Gilbert Burns,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ciryl Gane,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Kazula Vargas,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Daniel Cormier,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Yoel Romero,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Devonte Smith,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Manny Bermudez,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Hannah Cifers,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kyung Ho Kang,taekwondo,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Li Jingliang,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Song Kenan,kung fu,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0
+Da Un Jung,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Damir Ismagulov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Heili Alateng,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Islam Makhachev,sambo,0,1,0,0,0,0,0,0,0,0,1,0,0,0,2
+Mairbek Taisumov,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Nordine Taleb,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Don Madge,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Donald Cerrone,muay thai,0,0,1,1,0,0,1,0,0,1,0,1,0,2,0
+Glover Teixeira,boxing,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Misha Cirkunov,judo,0,0,0,1,1,1,1,0,0,1,0,1,0,2,1
+Brad Katona,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Chas Skelly,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Kyle Prepolec,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Irene Aldana,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Martin Bravo,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jose Quinonez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marco Polo Reyes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ariane Carnelossi,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sergio Pettis,taekwondo,0,0,0,1,0,0,1,1,0,1,0,0,0,2,0
+Vinicius Moreira,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Caludio Puelles,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Gunnar Nelson,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Michal Oleksiejczuk,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alen Amedovski,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Siyar Bahadurzada,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Brandon Davis,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Al Iaquinta,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Tai Tuivasa,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Luke Jumeau,taekwondo,1,0,0,0,0,0,1,1,0,0,0,1,0,2,0
+Justin Tafa,kickboxing,1,0,0,1,0,0,1,0,0,0,0,0,0,2,0
+Nadia Kassem,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Khalid Taha,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bevon Lewis,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Arnold Allen,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Justine Kish,muay thai,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Montel Jackson,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Sara McMann,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Joanna Jedrzejczyk,muay thai,0,0,1,1,0,0,0,0,0,0,0,0,0,2,0
+Niko Price,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Matt Frevola,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+JJ Aldrich,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Yair Rodriguez,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Joe Lauzon,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Maycee Barber,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Kyle Bochniak,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+Randy Costa,kickboxing,1,0,0,1,0,0,0,0,0,1,0,0,0,2,0
+Court McGee,wrestling,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Daniel Spitz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Muslim Salikhov,kung fu,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Alex White,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Raphael Pessoa Nunes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Conor McGregor,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Aleksa Camur,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kelvin Gastelum,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Shane Burgos,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Lyman Good,karate,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0
+Julio Arce,kickboxing,0,0,0,1,1,0,1,0,0,0,0,0,0,2,0
+Zabit Magomedsharipov,kung fu,0,1,0,1,0,0,1,0,1,0,0,0,0,2,1
+Alekander Volkov,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Zelim Imadaev,kickboxing,1,0,0,1,0,0,1,0,0,0,0,1,0,2,0
+Shamil Gamzatov,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Rustam Khabilov,sambo,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+Roman Kopylov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Abubakar Nurmagomedov,sambo,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+Alexander Yakovlev,sambo,0,1,0,0,0,0,1,0,0,0,1,0,0,0,2
+Grigorii Popov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Charles Oliveira,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Antonio Arroyo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sergio Moraes,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Douglas Silva de Andrade,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vanessa Melo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Frankie Edgar,wrestling,0,1,1,0,0,0,1,1,0,1,0,0,0,2,1
+Dooho Choi,mixed,1,0,0,0,0,0,0,1,0,1,0,0,0,2,0
+ Jun Yong Park,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Seungwoo Choi,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Dong Hyun Ma,mixed,1,0,0,0,0,1,0,1,0,0,0,0,0,2,1
+Peter Yan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matt Brown,mixed,0,0,1,0,0,0,1,1,0,1,0,1,0,2,0
+Aspen Ladd,jiu jitsu,1,1,0,1,0,0,0,0,0,1,0,0,0,2,1
+Rob Font,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Thiago Alves,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Joe Solecki,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Makhmud Muradov,sambo,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1
+Tatiana Suarez,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Yan Xiaonan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alexander Gustafsson,boxing,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1
+Jimi Manuwa,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Damir Hadzovic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Daniel Teymur,muay thai,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Rostem Akman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tonya Evinger,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Stevie Ray,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Nick Hein,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Bea Malecki,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Antonio Carlos Junior,jiu jitsu,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Desmond Green,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Danny Roberts,boxing,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0
+Michael Trizano,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Patrick Cummins,wrestling,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
+Zak Cummings,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Rose Namajunas,taekwondo,0,0,0,1,1,0,1,1,0,1,0,0,0,3,0
+Jared Cannonier,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Rogerio Nogueira,jiu jitsu,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Thiago Moises,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+BJ Penn,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Luana Carolina,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Talita Bernardo,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Walt Harris,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Aiemann Zahabi,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kyle Nelson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Arjan Bhullar,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mitch Gagnon,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jacare Souza,jiu jitsu,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+John Lineker,mixed,1,0,1,0,0,0,1,0,0,1,0,0,0,2,0
+Ben Saunders,jiu jitsu,0,1,0,1,1,1,1,0,0,1,0,0,0,2,2
+Angela Hill,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sergei Pavlovich,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Sultan Aliev,sambo,0,1,0,0,0,0,1,0,0,0,1,0,0,0,2
+Magomed Mustafaev,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Wilson Reis,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Boston Salmon,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Curtis Millender,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lauren Mueller,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+David Branch,jiu jitsu,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Kennedy Nzechukwu,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sodiq Yusuff,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ross Pearson,taekwondo,1,0,0,0,0,1,0,1,0,0,0,0,0,2,1
+Alex Perez,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+John Makdessi,taekwondo,0,0,0,1,1,0,1,1,0,0,0,0,0,3,0
+Ryan MacDonald,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Eric Shelton,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Darren Till,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Leon Edwards,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Jack Marshman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nicolae Negumereanu,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Danny Henry,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mike Grundy,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Tim Boetsch,wrestling,0,1,0,0,0,0,1,0,1,0,0,0,0,1,1
+Anthony Rocco Martin,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Marion Reneau,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cody Garbrandt,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Liz Carmouche,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dwight Grant,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michel Prazeres,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Renan Barao,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Alexandra Albu,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Rani Yahya,jiu jitsu,0,0,0,0,1,1,1,1,0,1,0,0,0,2,1
+Teruto Ishihara,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Wuliji Buren,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Junior Albini,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Magomed Bibulatov,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Gregor Gillespie,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Paige VanZant,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Dennis Bermudez,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Kyle Stewart,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ilir Latifi,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Chad Mendes,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Cat Zingano,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Zak Ottow,wrestling,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+Trevor Smith,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Adam Milstead,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Chris de la Rocha,boxing,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Elias Theodorou,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chad Laprise,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Mark Hunt,kickboxing,1,0,1,1,0,0,0,0,0,1,0,1,0,3,0
+Suman Mokhtarian,jiu jitsu,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Yushin Okami,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Keita Nakamura,mixed,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Elias Garcia,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mizuto Hirota,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Alex Gorgees,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pannie Kianzad,boxing,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+Darren Stewart,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Rick Glenn,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Julija Stoliarenko,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Hu Yaozong,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cezar Ferreira,capoeira,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1
+Guido Cannetti,kickboxing,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Cynthia Calvillo,mixed,0,0,1,1,0,0,1,0,0,1,0,0,0,2,0
+Humberto Bandenay,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Laureano Staropoli,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Devin Powell,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Nad Narimani,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chan Sung Jung,kickboxing,0,0,0,1,0,1,1,1,0,1,1,1,0,2,2
+Joseph Morales,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Weidman,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Jason Knight,boxing,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0
+Adam Wieczorek,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Andre Soukhamthath,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Garcia,mixed,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1
+Thibault Gouti,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Te Edwards,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lina Lansberg,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Gray Maynard,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Ryan LaFlare,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Luis Henrique,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Augusto Sakai,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Thales Leites,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Aleksei Kunchenko,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Khalid Murtazaliev,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Adam Yandiev,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roberto Sanchez,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Justin Gaethje,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jake Ellenberger,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+John Moraga,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+James Krause,jiu jitsu,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1
+TJ Dillashaw,wrestling,0,1,1,0,0,0,1,0,0,1,0,0,0,1,1
+Demetrious Johnson,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Matt Sayles,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Danielle Taylor,boxing,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Eddie Alvarez,boxing,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Jordan Mein,kickboxing,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+Kajan Johnson,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dustin Ortiz,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Vitor Miranda,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Emil Meek,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Justin Ledet,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Davey Grant,kickboxing,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1
+Jeremy Kimball,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Damian Stasiak,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Sage Northcutt,karate,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Randy Brown,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Myles Jury,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Justin Scoggins,karate,0,1,0,1,1,0,0,0,0,0,0,0,0,2,1
+Kurt Holobaugh,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jessica Aguilar,mixed,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Gokhan Saki,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Jamie Moyle,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jay Cucciniello,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Gunther,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tyler Diamond,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matt Bessette,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Felipe Arantes,judo,0,0,1,0,0,1,1,1,0,0,0,0,0,2,1
+Rolando Dy,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shinsho Anzai,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Viviane Pereira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jenel Lausa,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+CM Punk,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Rashad Coulter,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Rashad Evans,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Mike Santiago,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Johnny Eduardo,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jarred Brooks,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Eric Spicely,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Daniel Kelly,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Bradley Scott,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alexa Grasso,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Diego Rivas,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Poliana Botelho,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Henry Briones,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Claudio Puelles,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vitor Belfort,jiu jitsu,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Alberto Mina,jiu jitsu,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Justin Willis,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shana Dobson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dhiego Lima,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Matthew Lopez,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Bec Rawlings,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Tom Duquesnoy,sambo,1,1,1,0,0,0,0,0,0,1,1,0,0,2,2
+Mark Godbeer,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+CB Dollaway,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mike Pyle,taekwondo,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0
+Bryan Caraway,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jordan Johnson,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Maryna Moroz,boxing,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Albert Morales,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Steven Peterson,mixed,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Joshua Burkman,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Oskar Piechota,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tyson Pedro,jiu jitsu,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Damien Brown,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Rob Wilkinson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lyoto Machida,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Tim Johnson,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Alan Patrick,capoeira,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0
+Maia Stevenson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Iuri Alcantara,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jordan Rinaldi,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Vinc Pichel,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Austin Arnett,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Sabah Homasi,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kalindra Faria,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mads Burnell,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Julian Marquez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Carls John De Tomas,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Antonio Braga Neto,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+David Teymur,muay thai,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Amanda Cooper,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nicco Montano,boxing,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Barb Honchak,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joe Soto,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Christina Marks,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Karine Gevorgyan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ariel Beck,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michael Bisping,kickboxing,1,0,0,1,1,0,0,0,0,1,0,0,0,3,0
+Wang Guan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kailin Curran,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Cyril Asker,mixed,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Ryan Benoit,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Alex Chambers,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Anthony Hamilton,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Nate Marquardt,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jake Collier,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Johny Hendricks,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Hacran Dias,mixed,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Marcelo Golm,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcin Held,jiu jitsu,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1
+Artem Lobov,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Salim Touahri,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pearl Gonzalez,boxing,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Takanori Gomi,boxing,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+Syuri Kondo,karate,0,1,0,1,1,0,0,0,0,0,0,0,0,2,1
+Daichi Abe,judo,1,0,0,1,0,1,1,0,0,0,0,0,0,2,1
+Luke Rockhold,jiu jitsu,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Hector Lombard,judo,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Jason Saggo,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Mitch Clarke,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Francimar Barroso,jiu jitsu,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+Bojan Mihajlovic,judo,0,1,0,0,0,1,0,0,0,1,0,0,0,0,2
+Alvaro Herrera,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rafael Natal,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Damian Grabowski,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Frankie Perez,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+James Mulheron,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Charlie Ward,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Leslie Smith,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Daniel Omielanczuk,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Travis Browne,jiu jitsu,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Josh Stansbury,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Dong Hyun Kim,judo,0,0,0,0,0,1,0,1,0,0,1,0,0,1,2
+Tarec Saffiedine,karate,0,1,1,1,1,0,1,0,0,1,0,0,0,3,1
+Kwan Ho Kwak,mixed,1,0,0,1,0,0,1,0,0,0,0,0,0,2,0
+Naoki Inoue,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Kiichi Kunimoto,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Paulo Costa,muay thai,0,0,1,0,0,0,0,0,0,1,0,1,0,1,0
+Erick Silva,jiu jitsu,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Luan Chagas,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Peter Sobotta,judo,0,0,1,0,0,1,0,1,1,1,0,0,0,3,1
+Oliver Enkamp,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Reza Madadi,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Nico Musoke,mixed,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Joachim Christensen,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jessica Penne,jiu jitsu,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Hector Sandoval,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Patrick Williams,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Will Brooks,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brad Pickett,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Rony Jason,jiu jitsu,0,0,0,1,0,1,0,0,0,1,0,0,0,1,1
+Garreth McLellan,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Sam Sicilia,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Anderson Silva,jiu jitsu,0,0,1,1,0,0,0,1,0,1,0,0,1,4,0
+Abel Trujillo,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Daniel Jolly,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bobby Nash,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Henrique da Silva,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Marcos Rogerio de Lima,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jason Gonzalez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jocelyn Jones-Lybarger,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dmitrii Smoliakov,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Dominick Cruz,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Brandon Thatch,karate,0,0,0,1,1,0,1,0,0,0,0,0,0,2,0
+Cole Miller,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+James Moontasri,taekwondo,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Bojan Velickovic,muay thai,0,0,1,0,0,1,0,0,0,1,0,0,0,1,1
+Tim Kennedy,jiu jitsu,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+Nikita Krylov,karate,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1
+Valerie Letourneau,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Zach Makovsky,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Joe Gigliotti,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tiago Trator,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Keith Berish,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Juliana Lima,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Elvis Mutapcic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kyle Noke,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Yusuke Kasuya,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Seohee Ham,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Richard Walsh,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ben Nguyen,taekwondo,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1
+Yao Zhikui,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Ryan Bader,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Gegard Mousasi,boxing,1,0,0,1,0,1,0,0,0,0,0,0,0,2,1
+Magnus Cedenblad,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kyoji Horiguchi,karate,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Anna Elmose,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Miesha Tate,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Erik Perez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marco Beltran,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Erick Montano,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Polo Reyes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lukasz Sajewski,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shamil Abdurakhimov,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jonathan Wilson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cody East,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kelly Faszholz,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Roy Nelson,kung fu,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1
+Godofredo Pepey,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Glaico Franca,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roan Carneiro,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chris Wade,kickboxing,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1
+Augusto Montano,kung fu,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0
+Yancy Medeiros,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Jessin Ayari,mixed,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Taylor Lapilus,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Scott Askham,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shane Campbell,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Jeremy Kennedy,boxing,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Nate Diaz,jiu jitsu,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0
+Anthony Johnson,wrestling,1,1,0,1,0,0,0,0,0,0,0,0,0,2,1
+Rick Story,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Hyun Gyu Lim,boxing,1,0,0,0,0,0,0,1,0,0,0,0,0,2,0
+Alberto Uda,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Viktor Pesta,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Francisco Rivera,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cesar Arzamendia,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jim Alers,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Michael McDonald,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Cain Velasquez,wrestling,1,1,1,0,0,0,0,0,0,1,0,0,0,2,1
+Cory Hendricks,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Anthony Birchak,wrestling,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Russell Doane,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Rory MacDonald,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Steve Bosse,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Tamdan McCrory,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chris Beal,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ali Bagautinov,sambo,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+Dan Henderson,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Chris Camozzi,wrestling,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1
+Antonio Silva,karate,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1
+Albert Tumenov,boxing,1,0,0,1,1,0,0,0,0,0,0,0,0,3,0
+Jon Tuck,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Yan Cabral,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ulka Sasaki,mixed,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Efrain Escudero,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Oluwale Bamgbose,taekwondo,0,0,1,0,1,0,0,1,1,1,0,0,0,4,0
+Igor Pokrajac,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ian Entwistle,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Filip Pejic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rob Whiteford,judo,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1
+James Te Huna,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brendan O'Reilly,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Julian Erosa,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Mike Wilkinson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Norman Parke,judo,0,1,0,0,0,1,1,0,0,0,0,0,0,0,2
+Teemu Packalen,jiu jitsu,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Daniel Sarafian,judo,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1
+Jonavin Webb,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Noad Lahat,judo,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Josh Barnett,jiu jitsu,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+George Sullivan,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Matt Dwyer,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Patrick Cote,muay thai,1,1,1,1,0,0,0,0,0,1,0,0,0,3,1
+Maximo Blanco,wrestling,0,1,0,0,0,0,1,1,0,0,0,0,0,1,1
+Lorenz Larkin,kung fu,1,0,0,1,0,0,0,0,1,1,0,0,0,3,0
+Diego Brandao,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Sheldon Westcott,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sarah Kaufman,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Josh Samman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hayder Hassan,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Joe Proctor,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tatsuya Kawajiri,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Gabriel Gonzaga,jiu jitsu,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Joby Sanchez,kickboxing,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1
+Zubaira Tukhugov,sambo,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Benson Henderson,taekwondo,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1
+Yoshihiro Akiyama,judo,1,1,0,1,1,1,0,0,0,0,0,0,0,3,2
+Dongi Yang,judo,0,0,0,0,0,1,0,1,0,0,1,0,0,1,2
+Yui Chul Nam,mixed,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1
+Tae Hyun Bang,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ning Guangyou,muay thai,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Dominique Steele,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Horacio Gutierrez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hector Urbina,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vernon Ramos,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Valmir Lazaro,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ronda Rousey,judo,0,1,0,0,0,1,1,0,0,0,0,0,0,0,2
+Anthony Perosh,jiu jitsu,0,0,1,0,1,0,0,0,0,1,0,0,0,2,0
+Richie Vaculik,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+Fabio Maldonado,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Gleison Tibau,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Kevin Souza,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Viscardi Andrade,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bruno Korea,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Paddy Holohan,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Neil Seery,mixed,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Aisling Daly,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Cathal Pendred,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bubba Bush,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shawn Jordan,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Adriano Martins,jiu jitsu,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Francisco Trevino,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Chris Cariaso,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Takeya Mizugaki,mixed,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1
+Katsunori Kikuno,karate,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Naoyuki Kotani,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Clay Collard,wrestling,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+Joe Riggs,boxing,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Sam Stout,kickboxing,0,0,0,1,1,0,1,0,0,0,0,0,0,2,0
+Yves Jabouin,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Kelades,mixed,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Jared Rosholt,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Chris Dempsey,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Anthony Christodoulou,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Reginaldo Vieira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rafael Feijao,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Hugo Viana,taekwondo,1,0,0,0,0,0,0,1,1,1,0,0,0,3,0
+Kenny Robertson,wrestling,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+Daron Cruickshank,taekwondo,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1
+Ramsey Nijem,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jessamyn Duke,wrestling,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1
+Mickael Lebout,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcus Brimage,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Frank Mir,karate,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1
+Josh Thomson,mixed,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+Scott Jorgensen,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Igor Araujo,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kevin Casey,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Andrew Craig,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Michael Graves,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Angela Magana,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dan Miller,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Darrell Montague,boxing,1,1,1,0,0,0,0,0,0,1,0,0,0,2,1
+Mike Swick,taekwondo,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Yosdenis Cedeno,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Leandro Silva,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Steve Montgomery,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Danny Martinez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dennis Siver,kickboxing,0,0,0,1,0,1,0,1,0,0,1,0,0,2,2
+Alan Omer,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Niklas Backstrom,jiu jitsu,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+Piotr Hallmann,karate,0,0,0,0,1,0,0,0,0,0,0,0,1,2,0
+Thiago Tavares,jiu jitsu,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Brian Ebersole,wrestling,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1
+Ricardo Abreu,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+KJ Noons,karate,1,0,1,1,1,0,0,0,0,0,0,0,0,4,0
+Wendell Oliveira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lucas Martins,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Luiz Dutra,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mark Munoz,wrestling,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1
+Phillipe Nover,jiu jitsu,0,0,1,0,0,0,0,0,1,1,0,0,0,2,0
+Mark Eddiva,boxing,1,0,0,0,0,0,0,0,1,0,0,0,0,2,0
+Zhang Lipeng,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Roldan Sangcha-an,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nolan Ticman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hatsu Hioki,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dylan Andrews,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vik Grujic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alptekin Ozkilic,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Rampage Jackson,wrestling,0,1,0,0,1,0,1,0,0,0,0,1,0,1,1
+Jessica Rakoczy,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Eddie Gordon,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Pawel Pawlak,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Seth Baczynski,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bartosz Fabinski,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Izabela Badurek,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcin Bandel,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ron Stallings,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Leonardo Mafra,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Jorge de Oliveira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bentley Syler,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jake Lindsey,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Larissa Pacheco,mixed,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Masio Fullen,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+William Patolino,mixed,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Ivan Jorge,jiu jitsu,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Ian McCall,kung fu,0,0,0,0,0,0,1,0,1,1,0,1,0,1,0
+Richardson Moreira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Phil Davis,wrestling,1,1,1,0,0,0,0,0,0,1,0,0,0,2,1
+Akira Corassani,taekwondo,0,0,0,0,1,0,1,1,0,0,0,0,0,2,0
+Andy Ogle,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Howard,wrestling,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1
+Johnny Case,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matt Van Buren,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tateki Matsuda,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Danny Castillo,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Alexis Dufresne,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Elias Silverio,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tom Niinimaki,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Leandro Issa,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Marcio Alexandre Junior,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Jamie Varner,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Joe Ellenberger,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+David Michaud,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Emily Peters Kagan,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Todd Duffee,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Ruslan Magomedov,boxing,1,1,1,1,1,0,0,0,0,0,0,0,0,4,1
+Luke Barnatt,mixed,0,1,0,0,0,0,1,1,0,1,0,0,0,1,1
+Yves Edwards,mixed,0,0,1,0,1,0,0,0,1,1,0,0,0,3,0
+Juan Puig,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Edgar Garcia,mixed,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Caio Magalhaes,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Wagner Silva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Soa Palelei,mixed,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Luke Zachrich,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Jumabieke Tuerxun,mixed,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Fabricio Camoes,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Tor Troeng,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Manvel Gamburyan,judo,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1
+Michinori Tanaka,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Kazuki Tokudome,mixed,1,0,0,0,0,1,1,0,0,1,0,0,0,1,1
+Paulo Thiago,judo,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+Matt Mitrione,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Sean Soriano,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ruan Potts,judo,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Francis Carmont,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Aaron Phillips,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Sai Wang,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roland Delorme,judo,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+An Ying Wang,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Elizabeth Phillips,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tom Watson,boxing,1,0,0,1,1,0,1,0,1,0,0,0,0,4,0
+Kyle Kingsbury,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hernani Perpetuo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Akbarh Arreola,jiu jitsu,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Andreas Stahl,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Steven Siler,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Cody Donovan,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Justin Salas,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Jesse Ronson,kickboxing,1,1,0,1,0,0,0,0,0,0,0,1,0,2,1
+Patrick Walsh,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+George Roop,mixed,0,1,0,0,0,1,1,1,0,0,0,0,0,1,2
+Clint Hester,boxing,1,1,0,0,0,0,1,0,0,1,0,1,0,1,1
+Colton Smith,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Johnny Bedford,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Marcelo Guimaraes,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chris Indich,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Yaotzin Meza,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Bobby Voelker,mixed,1,0,0,1,0,0,1,0,0,0,0,1,0,2,0
+Rodrigo Damm,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Vaughan Lee,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Holdsworth,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Anthony Njokuani,taekwondo,0,0,1,0,0,0,1,1,0,0,0,0,0,2,0
+Costas Philippou,boxing,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Anthony Lapsley,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Estevan Payan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ryan Jimmo,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Mark Bocek,jiu jitsu,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Minotauro Nogueira,judo,1,1,0,0,0,1,0,0,0,1,0,0,0,1,2
+Ronny Markes,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Thiago Perpetuo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jake Shields,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Sean Spencer,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Renee Forte,mixed,0,0,1,0,1,0,0,0,0,1,0,0,0,2,0
+Will Campuzano,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bubba McDaniel,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Daniel Pineda,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cyrille Diabate,kickboxing,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Nam Phan,karate,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1
+Albert Cheng,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cody Gibson,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Rafaello Oliveira,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ernest Chavez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cristiano Marcello,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ildemar Alcantara,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Nick Catone,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Junior Hernandez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Isaac Vallie-Flagg,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Charlie Brenneman,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Royston Wee,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Dustin Kimura,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Chris Leben,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Robert Peralta,taekwondo,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Darren Uyenoyama,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Pat Barry,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Julie Kedzie,taekwondo,0,0,1,0,0,0,0,1,0,1,0,0,0,2,0
+Nick Ring,boxing,1,0,1,0,0,0,1,0,0,1,0,0,0,2,0
+Bruno Santos,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ben Wall,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joshua Sampo,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Georges St-Pierre,karate,1,1,0,0,1,0,1,0,0,1,0,0,0,2,1
+Josh Koscheck,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jason High,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jose Maria,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alessio Sakara,jiu jitsu,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Phil Harris,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rosi Sexton,jiu jitsu,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Jimy Hettes,judo,1,0,0,0,0,1,0,0,0,1,0,0,0,1,1
+George Sotiropoulos,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+TJ Waldburger,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Jeremy Larsen,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dustin Pague,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Thiago Silva,kickboxing,0,0,0,1,0,0,1,0,0,1,0,1,0,1,0
+Rousimar Palhares,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Iliarde Santos,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Brendan Schaub,boxing,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0
+Pat Healy,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mike Ricci,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ivan Menjivar,jiu jitsu,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Chris Clements,taekwondo,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Nandor Guelmino,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcos Vinicius,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joao Zeferino,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Keith Wisniewski,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Yuri Villefort,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Louis Gaudinot,karate,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1
+Pascal Krauss,boxing,1,0,0,0,0,1,0,0,0,1,0,0,0,1,1
+Chico Camus,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Ryan Couture,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jared Hamman,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Justin Edwards,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+James Head,boxing,1,0,1,0,0,0,1,0,0,1,0,0,0,2,0
+Mike Brown,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Vinny Magalhaes,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ednaldo Oliveira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mac Danzig,jiu jitsu,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Aaron Riley,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+John Albert,mixed,0,1,0,0,0,0,1,1,0,0,0,0,0,1,1
+Mike Pierce,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sean Pierson,wrestling,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Brian Bowles,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Leonard Garcia,mixed,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Clifford Starks,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Bristol Marunde,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Justin Lawrence,kickboxing,1,0,0,1,1,0,1,0,0,0,0,0,0,3,0
+Chris Spang,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Benny Alloway,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michael Kuiper,judo,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+Papy Abedi,judo,0,0,0,0,0,1,0,0,0,1,0,1,0,0,1
+Antonio Carvalho,mixed,0,0,0,0,1,1,1,0,0,1,0,0,0,1,1
+Wanderlei Silva,muay thai,0,0,1,1,0,0,1,0,0,1,0,0,0,2,0
+Riki Fukuda,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jon Manley,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nah-Shon Burrell,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Terry Etim,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Paul Sass,mixed,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Jon Fitch,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jacob Volkmann,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Edwin Figueroa,boxing,1,0,0,1,0,0,1,0,0,0,0,0,0,2,0
+TJ Grant,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Mike Stumpf,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mike Russow,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Simeon Thoresen,mixed,0,0,1,0,1,0,1,0,0,1,0,0,0,2,0
+Diego Nunes,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Wagner Prado,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Melvin Guillard,wrestling,0,1,1,0,0,1,1,0,0,1,0,0,0,1,2
+Philip De Fries,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Reuben Duran,mixed,1,1,1,0,0,0,1,0,0,1,0,0,0,2,1
+Mike Rio,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jared Papazian,mixed,0,0,1,1,0,0,1,1,0,1,0,0,0,3,0
+Colin Fletcher,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brendan Loughnane,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nick Penner,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcus LeVesseur,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mark Hominick,kickboxing,1,1,0,1,0,0,1,0,0,0,0,0,0,2,1
+Matthew Riddle,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Rich Franklin,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Tiequan Zhang,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Yasuhiro Urushitani,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Luiz Cane,jiu jitsu,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+Josh Neer,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Aaron Simpson,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Bart Palaszewski,jiu jitsu,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1
+Dan Hardy,mixed,1,0,1,1,1,0,1,1,1,1,0,0,0,6,0
+John Hathaway,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Che Mills,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+DaMarques Johnson,mixed,0,1,0,0,0,0,1,0,0,1,0,1,0,0,1
+Jason Young,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matt Hamill,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Ken Stone,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Josh Grispi,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Cheick Kongo,karate,1,0,1,1,1,0,0,0,0,0,0,0,0,4,0
+Karlos Vemola,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Damacio Page,wrestling,0,1,0,1,1,0,1,0,0,0,0,0,0,2,1
+Forrest Griffin,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Cung Le,kickboxing,0,0,0,1,0,0,1,1,0,1,0,0,0,2,0
+John Alessio,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Anistavio Medeiros,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Delson Heleno,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+John Teixeira,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Buddy Roberts,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Henry Martinez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jake Hecht,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jonathan Brookins,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jason Miller,mixed,0,0,0,0,1,1,1,1,0,1,0,1,0,2,1
+Amir Sadollah,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jason MacDonald,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Cody McKenzie,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jeff Curran,jiu jitsu,1,0,0,0,1,0,1,1,0,1,0,0,0,3,0
+Alex Soto,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mike Massenzio,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Miguel Torres,mixed,1,1,0,0,0,0,0,1,0,1,0,0,0,2,1
+Brian Stann,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Mackens Semerzier,mixed,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Oli Thompson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Norifumi Yamamoto,kickboxing,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1
+Anton Kuivanen,karate,1,1,0,0,1,0,0,0,0,0,0,0,1,3,1
+Nick Diaz,jiu jitsu,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1
+Dan Stittgen,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chael Sonnen,wrestling,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Joey Beltran,boxing,1,1,0,0,0,0,1,0,0,1,0,1,0,1,1
+Duane Ludwig,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Mike Easton,jiu jitsu,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Jorge Rivera,mixed,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+Kamal Shalorus,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Joseph Sandoval,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ricardo Funch,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Brock Lesnar,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Vladimir Matyushenko,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Tito Ortiz,wrestling,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1
+Claude Patrick,jiu jitsu,0,0,1,0,1,0,0,0,0,1,0,0,0,2,0
+Krzysztof Soszynski,wrestling,0,1,0,0,0,1,0,0,0,1,0,0,0,0,2
+Walel Watson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rich Attonito,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Stephan Bonnar,wrestling,1,1,1,0,0,0,0,1,0,1,0,0,0,3,1
+Tom Lawlor,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Aaron Rosa,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Maguire,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rob Broughton,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michihiro Omigawa,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Chris Cope,taekwondo,0,0,0,0,1,0,0,1,0,1,0,0,0,2,0
+Mirko Cro Cop,kickboxing,0,0,0,1,1,0,1,0,0,0,0,0,0,2,0
+Tyson Griffin,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Brandon Vera,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Steve Cantwell,kickboxing,0,0,0,1,0,0,1,0,0,1,0,1,0,1,0
+Shane Roller,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Matt Hughes,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Junior Assuncao,jiu jitsu,1,1,1,0,0,1,1,0,0,1,0,0,1,3,2
+Alan Belcher,mixed,0,1,0,1,0,1,0,1,0,1,0,0,0,2,2
+Clay Harvison,muay thai,0,0,1,1,0,0,0,0,0,1,0,0,0,2,0
+Dennis Hallman,jiu jitsu,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Jeff Hougland,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Christian Morecraft,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joe Stevenson,jiu jitsu,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Daniel Roberts,wrestling,0,1,0,0,1,1,0,0,0,1,0,0,0,1,2
+Shane Carwin,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Kenny Florian,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dave Herman,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Vagner Rocha,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jesse Bongfeldt,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chuck O'Neil,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Danny Downes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ryan McGillivray,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kendall Grove,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Cole Escovedo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jon Madsen,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Sean McCorkle,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Mario Miranda,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Waylon Lowe,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Ricardo Almeida,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kurt Pellegrino,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Rob Kimmons,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Tom Blackledge,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Maciej Jewtuszko,mixed,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Paul Taylor,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Phil Baroni,kickboxing,1,0,0,1,0,0,1,0,0,0,0,1,0,2,0
+Joe Doerksen,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pat Audinwood,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ian Loveland,wrestling,0,1,0,0,0,0,1,1,0,0,0,0,0,1,1
+Sako Chivitchian,judo,1,1,0,0,0,1,1,0,0,1,0,0,0,1,2
+Fredson Paixao,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Gerald Harris,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Karo Parisyan,judo,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Mike Lullo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Paul Kelly,boxing,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0
+Seth Petruzelli,karate,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1
+Kris McCray,mixed,0,1,0,0,1,0,0,1,0,1,0,0,0,2,1
+Mike Guymon,mixed,0,1,1,1,0,0,1,0,0,1,0,0,0,2,1
+James Wilks,mixed,0,0,0,1,0,0,1,1,0,1,0,0,0,2,0
+Spencer Fisher,mixed,1,0,0,0,1,0,1,0,1,0,0,0,0,3,0
+James McSweeney,muay thai,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Matt Serra,jiu jitsu,0,1,0,0,0,0,1,0,1,1,0,0,0,1,1
+Sean Sherk,wrestling,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1
+Steve Lopez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tomasz Drwal,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brian Foster,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Randy Couture,wrestling,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Andre Winner,mixed,1,0,0,0,1,0,1,0,0,1,0,0,0,2,0
+Nick Osipczak,mixed,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Dustin Hazelett,mixed,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Rodney Wallace,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Todd Brown,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+James Irvin,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chris Lytle,boxing,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1
+Forrest Petz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Keith Jardine,boxing,1,1,0,1,0,0,1,0,0,1,0,0,0,2,1
+Jamie Yager,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Gunderson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Josh Bryant,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chuck Liddell,kickboxing,0,0,0,1,1,0,1,0,0,1,0,0,0,2,0
+David Loiseau,mixed,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Jason Brilz,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jesse Forbes,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Kevin Ferguson,mixed,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0
+Marcus Davis,boxing,1,0,0,0,1,0,1,0,0,0,0,0,0,2,0
+Yoshiyuki Yoshida,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Nate Quarry,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Rob Emerson,karate,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Caol Uno,wrestling,0,1,0,0,0,1,0,0,0,1,0,0,0,0,2
+Eliot Marshall,taekwondo,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0
+Eric Schafer,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Manel Kape,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Danilo Marques,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lara Procopio,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michael Chandler,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Zhalgas Zhumagulov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mounir Lazzez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Gaetano Pirrello,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Zarrukh Adashev,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Jerome Rivera,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mason Jones,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sergey Morozov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Manon Fiorot,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dusko Todorovic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joselyne Edwards,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Khaos Williams,mixed,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+Taila Santos,mixed,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Jamie Pickett,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cody Durden,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Virna Jandiroba,jiu jitsu,0,0,1,0,0,0,1,0,1,1,0,0,0,2,0
+Rafael Fiziev,muay thai,1,1,1,0,0,0,1,0,0,1,1,0,0,2,2
+Sam Hughes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Peter Barrett,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Justin Jaynes,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+John Allan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jordan Leavitt,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Damon Jackson,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Parker Porter,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bill Algeo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Norma Dumont,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kai Kamaka,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Anderson Dos Santos,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Rachael Ostovich,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nate Maness,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jennifer Maia,muay thai,1,0,1,0,0,0,1,0,0,1,0,0,0,2,0
+Brandon Royval,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Jordan Wright,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jared Gooden,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dustin Stoltzfus,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sasha Palatnikov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cory McKenna,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rhys McKee,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kanako Murata,judo,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Tony Gravely,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roque Martinez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jamey Simmons,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Eduardo Garagorri,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ramiz Brahimaj,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Charlie Ontiveros,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Victor Rodriguez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jason Witt,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Kevin Natividad,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Phillip Hawes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Liliya Shakirova,mixed,0,1,0,0,0,0,1,0,0,0,1,1,0,0,2
+Shavkat Rakhmonov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Miranda Maverick,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Jonathan Martinez,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Guram Kutateladze,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Fares Ziam,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Maxim Grishin,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mark Striegl,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dricus Du Plessis,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Alan Baudot,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+KB Bhullar,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tony Kelley,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Omar Morales,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Stephanie Egger,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tagir Ulanbekov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cameron Else,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nassourdine Imavov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jinh Yu Frey,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Alex Da Silva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ludovit Klein,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jeff Hughes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+David Dvorak,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sarah Alpar,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+TJ Laramie,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Khama Worthy,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Kevin Croom,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ray Rodriguez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Aleksandar Rakic,kickboxing,1,0,0,1,0,0,1,0,0,0,0,0,0,2,0
+Austin Springer,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Christian Aguilera,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mizuki Inoue,karate,1,0,0,0,1,0,1,0,0,0,0,0,0,2,0
+Matthew Semelsberger,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Trevin Jones,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jairzinho Rozenstruik,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Danny Chavez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Munoz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Wellington Turman,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ali Qaisi,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vince Cachero,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jai Herbert,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Raphael Pessoa,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Niklas Stolze,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Castaneda,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Askar Askarov,sambo,0,1,0,0,0,0,1,0,0,0,1,0,0,0,2
+Arman Tsarukyan,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Serghei Spivac,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Andreas Michailidis,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Fishgold,jiu jitsu,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Jiri Prochazka,muay thai,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Roman Bogatov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Zhalgas Zhamagulov,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brianna Van Buren,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Max Rohskopf,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Charles Jourdain,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Gabe Green,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Klidson Abreu,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Vince Morales,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Anthony Hernandez,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Drakkar Klose,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Saparbeg Safarov,sambo,0,1,0,0,0,0,1,0,0,0,1,0,0,0,2
+Zarah Fairn,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Steve Garcia,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Marcos Rogerio De Lima,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Joshua Culibao,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rocco Martin,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dan Moret,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ben Askren,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Nohelin Hernandez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chance Rencountre,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shanna Young,karate,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1
+Sheymon Moraes,muay thai,0,0,1,1,0,1,0,0,0,1,0,0,0,2,1
+Ryan Hall,jiu jitsu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Jin Soo Son,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Felipe Colares,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Krzystof Jotko,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Yoshinori Horie,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sarah Frota,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lucie Pudilova,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hannah Goldy,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Kalinn Williams,mixed,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+Youssef Zalel,kickboxing,0,0,0,1,0,0,1,0,0,1,0,1,0,1,0
+Bobby Moffett,jiu jitsu,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1
+Jodie Esquibel,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Zhang Weili,kung fu,1,1,0,0,0,0,1,0,1,1,0,0,0,2,1
+Derrick,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tristan Connelly,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Carlos Huachin,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcos Mariano,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Danilo Belluardo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Luci Pudilova,mixed,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Kron Gracie,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Thomas Gifford,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hector Aldana,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Don'tale Mayes,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Ode Obsourne,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Sergey Khandozhko,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Isabela De Pauda,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Omar Antonio Morales Ferrer,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nina Ansaroff,taekwondo,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0
+Sung Bin Jo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Duda Santana,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Derrick Krantz,kung fu,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Jesus Pinedo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Carlo Pedersoli,karate,1,0,0,0,1,0,1,0,0,1,0,0,0,2,0
+Justin Frazier,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Michel Batista,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Leah Letson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Darrell Horcher,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Ricky Rainey,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Stefan Sekulic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Terrion Ware,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Craig White,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tim Williams,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jose Torres,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matheus Nicolau,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Abu Azaitar,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joe Giannetti,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Richie Smullen,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Allan Zuniga,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Melinda Fabian,karate,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1
+Mike Jackson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Felipe Silva,muay thai,0,0,1,1,0,0,1,0,0,1,0,0,0,2,0
+James Bochnovic,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dmitry Sosnovskiy,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Brian Camozzi,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Galore Bofando,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ryan Janes,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bharat Kandare,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ashkan Mokhtarian,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Michel Quinones,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Marcel Fortuna,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Christian Colombo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chanmi Jeon,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Reyes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Zu Anyanwu,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Abdul-Kerim Edilov,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Andrew Holbrook,wrestling,0,1,1,0,0,0,1,0,0,1,0,0,0,1,1
+Jesse Taylor,wrestling,0,1,0,0,0,0,1,0,0,1,0,1,0,0,1
+Nick Roehrick,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tom Gallicchio,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jimmy Wallhead,judo,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1
+Alex Nicholson,muay thai,1,0,1,0,0,0,1,0,0,0,0,0,0,2,0
+Michael McBride,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Cindy Dandois,judo,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Rashid Magomedov,sambo,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1
+Augusto Mendes,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Nathan Coy,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mike de la Torre,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alessandro Ricci,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+JC Cottrell,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Fredy Serrano,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Sean O'Connell,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jonathan Meunier,kickboxing,0,0,0,1,0,0,1,1,0,0,0,0,0,2,0
+Geane Herrera,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Milana Dudieva,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Heather Jo Clark,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jason Novelli,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Avila,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Leonardo Augusto Leleco,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Joey Gomez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cristina Stanciu,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cody Pfister,mixed,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Enrique Marin,jiu jitsu,0,1,0,1,0,0,1,0,0,1,0,0,0,1,1
+Fernando Bruno,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Anton Zafir,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mehdi Baghdad,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Dileno Lopes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jerrod Sanders,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dominic Waters,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Willie Gates,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rin Nakai,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jarjis Danho,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Martin Svensson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Felipe Olivieri,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tony Sims,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Masanori Kanehara,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Marcin Wrzosek,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+Konstantin Erokhin,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Abner Lloveras,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Leo Kuntz,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Steve Kennedy,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Gasan Umalatov,sambo,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1
+Jon Delos Reyes,mixed,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Ericka Almeida,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roger Zapata,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nazareno Malegarie,judo,0,0,0,0,0,1,1,1,0,1,0,0,0,1,1
+Sirwan Kakai,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roman Salazar,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hans Stringer,jiu jitsu,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Paul Redmond,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Levan Makashvili,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Joe Merritt,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lewis Gonzalez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Antonio Dos Santos,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Leonardo Morales,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lisa Ellis,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rocky Lee,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Justin Jones,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shayna Baszler,wrestling,0,1,1,0,0,0,1,0,0,1,0,0,0,1,1
+Cain Carrizosa,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roger Narvaez,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Josh Copeland,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Alex Torres,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Josh Shockley,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rodrigo de Lima,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Andy Enz,mixed,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Stanislav Nedkov,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Shane Howell,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mats Nilsson,judo,0,1,0,0,0,1,1,0,0,1,0,0,0,0,2
+Mike Rhodes,kickboxing,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0
+Garett Whiteley,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matt Hobar,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Heatherly,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Humberto Brown,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rodolfo Rubio,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tim Gorman,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Guto Inocente,kickboxing,1,0,0,1,0,0,1,0,0,1,0,0,0,2,0
+Takenori Sato,judo,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+Dashon Johnson,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Jianping Yang,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Danny Mitchell,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jack May,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Mike King,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tina Lahdemaki,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Daniel Spohn,jiu jitsu,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0
+Guilherme Vasconcelos,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lance Benoist,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Brian Houston,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shunichi Shimizu,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Will Chope,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Quinn Mulhern,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Dave Galera,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roger Bowling,boxing,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0
+Peggy Morgan,mixed,1,1,0,1,0,0,1,0,0,1,0,0,0,2,1
+Adlan Amagov,sambo,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+David Mitchell,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Martin Kampmann,muay thai,1,0,1,0,1,0,1,0,0,1,0,0,0,3,0
+Brian Melancon,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Sheila Gaff,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Josh Clopton,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Roger Gracie,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Eddie Mendez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+John Cholish,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Roger Hollett,mixed,1,0,1,1,0,0,0,0,0,1,0,0,0,3,0
+Azamat Gashimov,mixed,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1
+Gilbert Smith,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Collin Hart,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jimmy Quinlan,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pablo Garza,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Adam Cella,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Besam Yousef,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Issei Tamura,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lavar Johnson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Matt Grice,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Caros Fodor,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Brock Jardine,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jorge Santiago,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Motonobu Tezuka,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ulysses Gomez,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Jay Hieron,wrestling,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1
+Milton Vieira,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+CJ Keith,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Byron Bloodworth,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Shane del Rosario,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+John Cofer,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Manuel Rodriguez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chad Griggs,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tom DeBlass,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Joey Gambino,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Carlo Prater,wrestling,1,1,1,1,0,1,1,0,0,1,0,0,0,3,2
+Tommy Hayden,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Eiji Mitsuoka,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Josh Ferguson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Yoislandy Izquierdo,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Wagner Campos,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Luis Ramos,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Carlos Eduardo Rocha,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Bernardo Magalhaes,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pat Schilling,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Tickle,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Saunders,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jorge Lopez,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nick Denis,karate,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+Eddie Yagin,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Eric Wisely,taekwondo,0,0,0,1,0,0,1,1,0,0,0,0,0,2,0
+Jon Olav Einemo,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Stephen Bass,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dustin Neace,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Nick Pace,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Shamar Bailey,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Paul Bradley,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Matt Lucas,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Edward Faaloloto,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Ricardo Romero,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Donny Walker,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+TJ O'Brien,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jason Reinhardt,mixed,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Javier Vazquez,jiu jitsu,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Curt Warburton,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tim Credeur,mixed,1,0,0,0,0,1,1,0,0,1,0,0,0,1,1
+Charlie Valencia,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ryan Jensen,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Kyle Watson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Chris Tuchscherer,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Antonio Banuelos,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Gabe Ruediger,jiu jitsu,0,0,0,0,1,1,1,0,1,1,0,0,0,2,1
+Tim Hague,boxing,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+Willamy Freire,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Amilcar Alves,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Greg Soto,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Antonio McKee,wrestling,0,1,0,0,0,1,1,0,0,0,0,1,0,0,2
+Aaron Wilkinson,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Tyler Toner,taekwondo,1,0,0,1,0,0,1,1,0,0,0,0,0,3,0
+Maiquel Falcao,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Goran Reljic,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Alexandre Ferreira,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Mark Scanlon,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Gilbert Yvel,kickboxing,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0
+Vinicius Queiroz,muay thai,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+Mark Holst,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Julio Paulino,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+James Toney,boxing,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0
+John Salter,wrestling,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1
+Steve Steinbeiss,kickboxing,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+James Hammortree,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Jesse Lennox,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dan Lauzon,wrestling,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+Joe Brammer,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Paul Daley,kickboxing,0,0,1,1,0,0,1,0,0,0,0,0,0,2,0
+Jonathan Goulet,mixed,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+Renzo Gracie,jiu jitsu,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+Brad Blackburn,boxing,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Matt Veach,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+Mostapha Al-Turk,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Ronys Torres,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Lucio Linhares,mixed,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Rory Markham,karate,1,0,0,0,1,0,1,0,0,0,0,0,0,2,0
+Paul Buentello,taekwondo,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+Shannon Gugerty,sambo,0,0,1,0,0,0,1,0,0,1,1,0,0,1,1
+Chase Gormley,wrestling,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
