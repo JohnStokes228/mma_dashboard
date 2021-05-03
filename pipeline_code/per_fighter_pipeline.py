@@ -10,13 +10,11 @@ repeat the scrape that the data will need re transforming.
 The camp data is both the hardest to make useful and the least useful once transformed so hurray for wasted efforts I
 guess.
 
-TODO: - identify what columns should be salvaged and how  <- more likely I'll be adding than taking away tbh
-      - write pipeline for preforming the transformation  <- 1/2 done
+TODO: - write pipeline for preforming the transformation  <- 1/2 done
       - build tests where necessary  <- built a few I guess...
       - set up sphinx docs <- looks like we need something to allow for numpy docs
-      - complete_df has extra rows in it <- looks like at least one fighter has multiple nationalities <<- generic name?
-      - clean where appropriate... <- 'derrick' needs a clean lads
-      - logger to log things needs setting up
+      - create per_fighter df and per_fight df as separate outputs? at the moment we save alot of duplicate info.
+      - implement logging in a more thorough way
 
 """
 import pandas as pd
@@ -26,6 +24,10 @@ import json
 import re
 from typing import List, Tuple, Dict
 from functools import reduce
+from pipeline_code.logger_module import get_pipeline_logger
+
+
+logger = get_pipeline_logger(__name__)
 
 
 def set_mixed_dtype_to_int(
@@ -385,6 +387,7 @@ def complete_fighter_df() -> pd.DataFrame:
     -------
     Dataframe containing gym and nationality data per fighter.
     """
+    logger.info("Began construction of complete dataset")
     nationality_df = create_nationality_df()
     per_fighter_df = create_per_fighter_df()
     fighters_list = list(per_fighter_df['fighter'].unique())
@@ -393,6 +396,7 @@ def complete_fighter_df() -> pd.DataFrame:
 
     df_list = [per_fighter_df, nationality_df, gyms_df, disciplines_df]
     complete_df = reduce(lambda left, right: pd.merge(left, right, on='fighter', how='left'), df_list)
+    logger.info("Completed construction of complete dataset")
 
     return complete_df
 
