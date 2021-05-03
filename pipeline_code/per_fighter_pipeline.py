@@ -16,6 +16,7 @@ TODO: - identify what columns should be salvaged and how  <- more likely I'll be
       - set up sphinx docs <- looks like we need something to allow for numpy docs
       - complete_df has extra rows in it <- looks like at least one fighter has multiple nationalities <<- generic name?
       - clean where appropriate... <- 'derrick' needs a clean lads
+      - logger to log things needs setting up
 
 """
 import pandas as pd
@@ -24,6 +25,7 @@ import hashlib
 import json
 import re
 from typing import List, Tuple, Dict
+from functools import reduce
 
 
 def set_mixed_dtype_to_int(
@@ -121,7 +123,7 @@ def split_df_by_col(
     """
     opponent = '{}fighter'.format(exc_substring)
 
-    columns_to_keep = [col for col in df.columns if exc_substring not in col]
+    columns_to_keep = list(filter(lambda x: exc_substring not in x, df.columns))
     columns_to_keep.append(opponent)
 
     column_names = {col: col.replace(inc_substring, '') for col in columns_to_keep}
@@ -258,7 +260,7 @@ def split_string_list(variables_string: str) -> List[str]:
     An ordered list of variables.
     """
     variables_string = variables_string.split(',')
-    variable_list = [get_proper_nouns(variable) for variable in variables_string]
+    variable_list = list(map(get_proper_nouns, variables_string))
 
     return variable_list
 
@@ -349,6 +351,7 @@ def create_gyms_df(fighters_list: List[str]) -> pd.DataFrame:
     A dataframe containing a list of all current fighters at each major MMA gym according to wikipedia.
     """
     gyms_dict = create_gym_dict()
+
     gyms_dict['fighter'] = [
         fighters_in_list(fighters_list, gym_fighters) for gym_fighters in gyms_dict['current_fighters']
     ]
@@ -388,9 +391,8 @@ def complete_fighter_df() -> pd.DataFrame:
     gyms_df = create_gyms_df(fighters_list)
     disciplines_df = create_disciplines_df()
 
-    complete_df = pd.merge(per_fighter_df, nationality_df, on='fighter', how='left')
-    complete_df = pd.merge(complete_df, gyms_df, on='fighter', how='left')
-    complete_df = pd.merge(complete_df, disciplines_df, on='fighter', how='left')
+    df_list = [per_fighter_df, nationality_df, gyms_df, disciplines_df]
+    complete_df = reduce(lambda left, right: pd.merge(left, right, on='fighter', how='left'), df_list)
 
     return complete_df
 
