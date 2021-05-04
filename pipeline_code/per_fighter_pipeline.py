@@ -14,7 +14,6 @@ TODO: - write pipeline for preforming the transformation  <- 1/2 done
       - build tests where necessary  <- built a few I guess...
       - set up sphinx docs <- looks like we need something to allow for numpy docs
       - create per_fighter df and per_fight df as separate outputs? at the moment we save alot of duplicate info.
-      - implement logging in a more thorough way
 
 """
 import pandas as pd
@@ -69,6 +68,7 @@ def create_col_hash(
         cols_to_hash
         .apply(lambda x: hashlib.md5(x.encode('utf-8')).hexdigest())
     )
+    logger.debug("SUCCESSFUL - created hash for fights")
 
     return df
 
@@ -183,6 +183,7 @@ def standardise_cols(df: pd.DataFrame) -> pd.DataFrame:
     df['better_rank'] = df.apply(lambda x: red_blue_converter(x.corner, x.better_rank), axis=1)
 
     df.loc[df.finish_details.isin(['Red', 'Blue', 'neither']), 'finish_details'] = np.NaN  # scrub the filth!
+    logger.debug("SUCCESSFUL - cleaned corner specific columns")
 
     return df
 
@@ -201,6 +202,7 @@ def create_per_fighter_df() -> pd.DataFrame:
 
     df = pd.concat([red_corner_df, blue_corner_df])
     df = standardise_cols(df)
+    logger.debug("SUCCESSFUL - split per fight df into a per fighter per fight df.")
 
     return df
 
@@ -281,6 +283,7 @@ def create_nationality_df() -> pd.DataFrame:
 
     nationalities_df = pd.DataFrame.from_dict(nationalities_dict)
     nationalities_df = nationalities_df.groupby(['fighter']).first().reset_index()
+    logger.debug("SUCCESSFUL - created per fighter country of origin dataset")
 
     return nationalities_df
 
@@ -293,7 +296,7 @@ def create_gym_dict() -> Dict[str, List[str]]:
     I delete the 'coaches' data since it required cleaning, would still eb a list per fighter, would only be filled for
     some fighters and, prehaps most importantly, the coaches are per gym meaning they don't really add any extra info
     compared to just the camp itself. I delete 'previous_fighters' for now as it gets in the way but may come back and
-    reinstate it at some point as there's really not reason to other than convenience.
+    reinstate it at some point as there's really no reason to other than convenience.
 
     Returns
     -------
@@ -307,6 +310,7 @@ def create_gym_dict() -> Dict[str, List[str]]:
     gyms_dict['camp_country'] = [re.sub(r'[^a-zA-Z ]+', '', loc.split(', ')[-1]) for loc in gyms_dict['camp_location']]
     gyms_dict['camp_city'] = [loc.split(',')[0] for loc in gyms_dict['camp_location']]
     del gyms_dict['camp_location']
+    logger.debug("SUCCESSFUL - cleaned location, country and city variables.")
 
     gyms_dict['camp'] = gyms_dict['camp'][0].split(', ')
     gyms_dict['camp'] = [re.sub(r'[^a-zA-Z ]+', '', camp) for camp in gyms_dict['camp']]
@@ -361,6 +365,7 @@ def create_gyms_df(fighters_list: List[str]) -> pd.DataFrame:
     gyms_df = pd.DataFrame.from_dict(gyms_dict)
     gyms_df = gyms_df.explode('fighter')
     gyms_df = gyms_df.groupby(['fighter']).first().reset_index()
+    logger.debug("SUCCESSFUL - gyms data has been expanded into a per fighter dataframe.")
 
     return gyms_df
 
@@ -376,6 +381,7 @@ def create_disciplines_df() -> pd.DataFrame:
 
     disciplines_df['primary_discipline'] = disciplines_df['primary_discipline'].fillna('mixed')
     disciplines_df.fillna(0, inplace=True)
+    logger.debug("SUCCESSFUL - disciplines dataset edited to fill structured NULL values")
 
     return disciplines_df
 
