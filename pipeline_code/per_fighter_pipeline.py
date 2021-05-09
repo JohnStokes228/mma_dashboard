@@ -13,7 +13,8 @@ guess.
 TODO: - write pipeline for preforming the transformation  <- 1/2 done
       - build tests where necessary  <- built a few I guess...
       - set up sphinx docs <- looks like we need something to allow for numpy docs
-      - create per_fighter df and per_fight df as separate outputs? at the moment we save alot of duplicate info.
+      - implement error handling into logger functionality in more robust way than the current, which catches only
+      specific errors
 
 """
 import pandas as pd
@@ -21,6 +22,7 @@ import numpy as np
 import hashlib
 import json
 import re
+import sys
 from typing import List, Tuple, Dict
 from functools import reduce
 from pipeline_code.logger_module import get_pipeline_logger
@@ -386,7 +388,7 @@ def create_disciplines_df() -> pd.DataFrame:
     return disciplines_df
 
 
-def complete_fighter_df() -> pd.DataFrame:
+def complete_fight_df() -> pd.DataFrame:
     """Bring together the wikipedia bonus data and the master data into a single dataframe.
 
     Returns
@@ -407,7 +409,92 @@ def complete_fighter_df() -> pd.DataFrame:
     return complete_df
 
 
+def get_fighter_data(complete_df: pd.DataFrame) -> pd.DataFrame:
+    """Split the per fighter data from the complete df, taking the most recent values only
+
+    Parameters
+    ----------
+    complete_df : Complete per fight df, made from various sources.
+
+    Returns
+    -------
+    Dataframe containing only the relevant data.
+    """
+    irrelevant_cols = ['ev', 'location', 'country', 'Winner', 'title_bout', 'no_of_rounds', 'draw', 'empty_arena',
+                       'constant_1', 'finish', 'finish_details', 'finish_round', 'finish_round_time',
+                       'total_fight_time_secs', 'opponent', 'corner', 'better_rank', 'match_weightclass_rank']
+    unwanted_keywords = ['_dif', 'bout']
+    irrelevant_cols = irrelevant_cols + [col for col in complete_df.columns
+                                         if any(map(col.__contains__, unwanted_keywords))]
+
+    per_fighter_df = complete_df.drop(irrelevant_cols, axis=1)
+
+    try:
+        per_fighter_df['date'] = pd.to_datetime(per_fighter_df['date'], format='%Y-%m-%d')
+        per_fighter_df = per_fighter_df.loc[per_fighter_df.groupby('fighter')['date'].idxmax()]
+        logger.info('Reduced fighter df to only most recent totals.')
+    except Exception as e:
+        logger.error('FAILURE - date in wrong format.', exc_info=e)
+        sys.exit(__status=0)
+
+    return per_fighter_df
+
+
+def summarise_fight_stats(complete_df: pd.DataFrame) -> pd.DataFrame:
+    """Summarise the per fight statistics using a bog standard group by operation.
+
+    Parameters
+    ----------
+    complete_df : Complete fight df compiled from several sources.
+
+    Returns
+    -------
+    A list of summary statistics for each fighters career.
+    """
+    agg_cols = ['no_of_rounds', 'Weight_lbs', 'win_dif', 'height_dif', 'reach_dif', 'sig_str_dif', 'avg_sub_att_dif',
+                'avg_td_dif', 'better_rank', 'total_fight_time_secs', 'kd_bout', 'sig_str_landed_bout',
+                'sig_str_attempted_bout', 'sig_str_pct_bout', 'tot_str_landed_bout', 'tot_str_attempted_bout',
+                'td_landed_bout', 'td_attempted_bout', 'td_pct_bout', 'sub_attempts_bout', 'pass_bout', 'rev_bout']
+
+    agg_dict = {col: 'mean' for col in agg_cols}
+    agg_dict['location'] = pd.Series.mode
+    agg_dict['date'] = [np.min, np.max]
+    agg_dict['bout_id'] = 'unique'
+
+    complete_df['better_rank'] = pd.to_numeric(complete_df['better_rank'], errors='coerce')
+    complete_df['better_rank'].fillna(0, inplace=True)
+
+    try:
+        summaries = complete_df.groupby('fighter').agg(agg_dict)
+        summaries.columns = ['_'.join(col).strip() for col in summaries.columns.values]
+        summaries.reset_index(inplace=True)
+        logger.debug('SUCCESSFUL - Produced average per fight statistics per fighter')
+
+        return summaries
+    except Exception as e:
+        logger.error('FAILURE -', exc_info=e)
+        sys.exit(__status=0)
+
+
+def fighter_summary_data(complete_df: pd.DataFrame) -> pd.DataFrame:
+    """Create summary of each fighter at the most recent available point in time.
+
+    Parameters
+    ----------
+    complete_df : Full per fight dataset.
+    """
+    fighter_df = get_fighter_data(complete_df)
+    summary_df = summarise_fight_stats(complete_df)
+    fighter_df = pd.merge(fighter_df, summary_df, on='fighter', how='left')
+    logger.info('Completed construction of per fighter df.')
+
+    return fighter_df
+
+
 if __name__ == '__main__':
-    fighter_df = complete_fighter_df()
-    fighter_df.to_csv('data/complete_per_fighter.csv', index=False)
-    print('Created per fighter df successfully!')
+    fight_df = complete_fight_df()
+    fight_df.to_csv('data/complete_fight.csv', index=False)
+    print('Created per fight df successfully!')
+    per_fighter_summary_df = fighter_summary_data(fight_df)
+    per_fighter_summary_df.to_csv('data/per_fighter_recent.csv', index=False)
+    print('Created per fighter recent summary df successfully!')

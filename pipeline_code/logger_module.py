@@ -2,6 +2,8 @@
 Logging module for dashboard pipeline, to be called at specific stages only. This needs to exist since we have
 web scraped data involved and don't want to accidentally shag ourselves on the output. We may further edit this over
 time but for now this will do i guess lad.
+
+TODO: - implement logging to terminal as well as logging to logfile
 """
 import logging
 import time
