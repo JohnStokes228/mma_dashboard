@@ -8,3 +8,7 @@ Flask-Compress==1.9.0
 Brotli==1.0.9
 pandas==1.2.3
 numpy==1.19.1
+kaggle==1.5.12
+Scrapy==2.3.0
+beautifulsoup4==4.9.3
+unidecode==1.1.1

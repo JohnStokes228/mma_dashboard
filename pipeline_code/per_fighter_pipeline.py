@@ -15,6 +15,7 @@ TODO: - write pipeline for preforming the transformation  <- 1/2 done
       - set up sphinx docs <- looks like we need something to allow for numpy docs
       - implement error handling into logger functionality in more robust way than the current, which catches only
       specific errors
+      - edit existing code base to use the fresh scraped data rather than the legacy scrape data
 
 """
 import pandas as pd
