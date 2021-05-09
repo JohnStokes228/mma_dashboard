@@ -34,3 +34,5 @@ NEXT UP:
 - decide how to build this fatty dashboard
 - learn dash / plotly libraries
 - build a main script that will give the user control of the creation of the dashboard
+- utilise a call to kaggles api to access the initial files
+
