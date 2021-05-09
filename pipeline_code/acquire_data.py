@@ -46,14 +46,14 @@ class WikipediaSpider(scrapy.Spider):
         List of tuples of desired variable names, xpaths and attributes.
         """
         if 'camps' in response.url:
-            self.name = 'camp_scraper'
+            self.name = 'wikipedia-camps'
             return [('camp', '//table[@class="wikitable"]/tbody/tr/td[1]', 'text'),
                     ('coaches', '//table[@class="wikitable"]/tbody/tr/td[2]', 'text'),
                     ('current_fighters', '//table[@class="wikitable"]/tbody/tr/td[3]', 'text'),
                     ('previous_fighters', '//table[@class="wikitable"]/tbody/tr/td[4]', 'text'),
                     ('camp_location', '//table[@class="wikitable"]/tbody/tr/td[5]', 'text')]
         else:
-            self.name = 'nationality_scraper'
+            self.name = 'wikipedia-nationalities'
             return [('country_of_origin', '//table[position() > 7]/tbody/tr/td/img', 'alt'),
                     ('fighter', '(//table[position() > 7]/tbody/tr)/td[2]', 'text')]
 
@@ -177,6 +177,13 @@ def get_most_recent_kaggle() -> None:
     api.authenticate()
 
     api.dataset_download_files('mdabbert/ultimate-ufc-dataset', path='data/', unzip=True)
+
+
+def acquire_data_main() -> None:
+    """Run data acquisition functions.
+    """
+    get_most_recent_kaggle()
+    scrape_wikipedia_data()
 
 
 if __name__ == '__main__':

@@ -255,23 +255,6 @@ def get_proper_nouns(input_string: str) -> str:
     return proper_nouns
 
 
-def split_string_list(variables_string: str) -> List[str]:
-    """Transform the input lists into something usable.
-
-    Parameters
-    ----------
-    variables_string : A single string with a bunch of flag file names in.
-
-    Returns
-    -------
-    An ordered list of variables.
-    """
-    variables_string = variables_string.split(',')
-    variable_list = list(map(get_proper_nouns, variables_string))
-
-    return variable_list
-
-
 def create_nationality_df() -> pd.DataFrame:
     """Transform raw scraped wikipedia fighter nationality json data into a usable pandas df.
 
@@ -281,8 +264,8 @@ def create_nationality_df() -> pd.DataFrame:
     """
     nationalities_dict = json_to_dict('data/wikipedia-nationalities.json')
 
-    nationalities_dict['country_of_origin'] = split_string_list(nationalities_dict['country_of_origin'][0])
-    nationalities_dict['fighter'] = split_string_list(nationalities_dict['fighter'][0])
+    nationalities_dict['country_of_origin'] = list(map(get_proper_nouns, nationalities_dict['country_of_origin']))
+    nationalities_dict['fighter'] = list(map(get_proper_nouns, nationalities_dict['fighter']))
 
     nationalities_df = pd.DataFrame.from_dict(nationalities_dict)
     nationalities_df = nationalities_df.groupby(['fighter']).first().reset_index()

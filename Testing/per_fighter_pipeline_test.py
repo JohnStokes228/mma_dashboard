@@ -4,7 +4,7 @@ fear of the regex for grabbing proper nouns but looks like its passing so... yea
 """
 from pipeline_code.per_fighter_pipeline import (
     get_proper_nouns,
-    split_string_list,
+    # any number of other additional tests
 )
 
 
@@ -27,10 +27,3 @@ def test_get_proper_nouns_champ_shit_only():
     expected_output = 'Fat Boy Slim'
 
     assert get_proper_nouns(input_string) == expected_output
-
-
-def test_split_string_list():
-    input_string = '  Test this Mother, you goddamn **23Son_Of&A*Bitch'
-    expected_output = ['Test Mother', 'Son Of A Bitch']
-
-    assert split_string_list(input_string) == expected_output
