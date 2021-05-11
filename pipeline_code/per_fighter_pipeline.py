@@ -15,7 +15,6 @@ TODO: - write pipeline for preforming the transformation  <- 1/2 done
       - set up sphinx docs <- looks like we need something to allow for numpy docs
       - implement error handling into logger functionality in more robust way than the current, which catches only
       specific errors
-      - edit existing code base to use the fresh scraped data rather than the legacy scrape data
 
 """
 import pandas as pd
@@ -26,10 +25,10 @@ import re
 import sys
 from typing import List, Tuple, Dict
 from functools import reduce
-from pipeline_code.logger_module import get_pipeline_logger
+import logging
 
 
-logger = get_pipeline_logger(__name__)
+logger = logging.getLogger(__name__)
 
 
 def set_mixed_dtype_to_int(
@@ -262,7 +261,7 @@ def create_nationality_df() -> pd.DataFrame:
     -------
     Pandas dataframe of per fighter nationality.
     """
-    nationalities_dict = json_to_dict('data/wikipedia-nationalities.json')
+    nationalities_dict = json_to_dict('data/wikipedia-nationalities_test.json')
 
     nationalities_dict['country_of_origin'] = list(map(get_proper_nouns, nationalities_dict['country_of_origin']))
     nationalities_dict['fighter'] = list(map(get_proper_nouns, nationalities_dict['fighter']))
@@ -288,7 +287,7 @@ def create_gym_dict() -> Dict[str, List[str]]:
     -------
     Pandas dataframe of per fighter gyms.
     """
-    gyms_dict = json_to_dict('data/wikipedia-camps.json')
+    gyms_dict = json_to_dict('data/wikipedia-camps_test.json')
     del gyms_dict['coaches']
     del gyms_dict['previous_fighters']
 
@@ -475,10 +474,16 @@ def fighter_summary_data(complete_df: pd.DataFrame) -> pd.DataFrame:
     return fighter_df
 
 
-if __name__ == '__main__':
+def per_fighter_pipeline_main() -> None:
+    """Run per fighter transforms.
+    """
     fight_df = complete_fight_df()
     fight_df.to_csv('data/complete_fight.csv', index=False)
     print('Created per fight df successfully!')
     per_fighter_summary_df = fighter_summary_data(fight_df)
     per_fighter_summary_df.to_csv('data/per_fighter_recent.csv', index=False)
     print('Created per fighter recent summary df successfully!')
+
+
+if __name__ == '__main__':
+    per_fighter_pipeline_main()

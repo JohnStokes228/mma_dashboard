@@ -1,9 +1,8 @@
 """
-acquire required datasets for dashboard construction.
+acquire required datasets for dashboard construction. need to test if this logging implementation works hahaha. it might
+not. it probably wont. but there is always a chance that it will...
 
-TODO: - move existing web scraping code into this file to scrape wikipedia with for peripheral datasets, but only the
-      mvp. don't want to port the whole scraping project over that's too complicated really...
-      - write code to automate construction of disciplines dataset?
+TODO: - write code to automate construction of disciplines dataset?
 """
 from kaggle.api.kaggle_api_extended import KaggleApi
 import scrapy
@@ -14,6 +13,10 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 import json
 from scrapy.crawler import CrawlerProcess
+import logging
+
+
+logger = logging.getLogger(__name__)
 
 
 class WikipediaSpider(scrapy.Spider):
@@ -29,6 +32,7 @@ class WikipediaSpider(scrapy.Spider):
                 'handle_httpstatus_list': [301, 302]}
 
         for url in self.start_urls:
+            logger.info('requesting URL {}'.format(url))
             yield scrapy.Request(url=url, meta=meta, callback=self.parse)
 
     def get_xpath_lists(
@@ -57,8 +61,8 @@ class WikipediaSpider(scrapy.Spider):
             return [('country_of_origin', '//table[position() > 7]/tbody/tr/td/img', 'alt'),
                     ('fighter', '(//table[position() > 7]/tbody/tr)/td[2]', 'text')]
 
+    @staticmethod
     def element_to_attribute(
-        self,
         element_list: List[str],
         attribute: str,
     ) -> List[str]:
@@ -75,13 +79,20 @@ class WikipediaSpider(scrapy.Spider):
         """
         attribute_list = []
 
+        logger.debug('checking elements for attribute {}'.format(attribute))
+
         for element in element_list:
-            soup = BeautifulSoup(element, 'html.parser')
-            if attribute == 'text':
-                attribute_list.append(soup.get_text())
-            else:
-                attr = soup.find()[attribute]
-                attribute_list.append(attr)
+            try:
+                soup = BeautifulSoup(element, 'html.parser')
+                if attribute == 'text':
+                    attribute_list.append(soup.get_text())
+                else:
+                    attr = soup.find()[attribute]
+                    attribute_list.append(attr)
+            except Exception as e:
+                logger.warning('FAILURE - {}'.format(e))
+
+        logger.debug('found {} of the desired attribute in the supplied elements'.format(len(attribute_list)))
 
         return attribute_list
 
@@ -111,8 +122,8 @@ class WikipediaSpider(scrapy.Spider):
 
         return output_dict
 
+    @staticmethod
     def clean_scraped_data(
-        self,
         data_dict: Dict[str, List[str]],
     ) -> Dict[str, str]:
         """Cleans the values in input dict by:
@@ -130,11 +141,17 @@ class WikipediaSpider(scrapy.Spider):
         -------
         Input dictionary whose values were cleaned via the above described method.
         """
+
+        logger.info('Cleaning scraped data...')
+
         for key in data_dict.keys():
-            data_dict[key] = [val.replace('£', '') for val in data_dict[key]]
-            data_dict[key] = [unidecode(val) for val in data_dict[key]]
-            data_dict[key] = [val.lstrip().rstrip() for val in data_dict[key]]
-            data_dict[key] = [' '.join(val.split()) for val in data_dict[key]]
+            try:
+                data_dict[key] = [val.replace('£', '') for val in data_dict[key]]
+                data_dict[key] = [unidecode(val) for val in data_dict[key]]
+                data_dict[key] = [val.lstrip().rstrip() for val in data_dict[key]]
+                data_dict[key] = [' '.join(val.split()) for val in data_dict[key]]
+            except TypeError:
+                logger.warning('FAILURE - cannot clean non obj data types!')
 
         return data_dict
 
@@ -149,12 +166,14 @@ class WikipediaSpider(scrapy.Spider):
         ----------
         response : Response to scrapys request for the input url.
         """
+        logger.info('beginning scrape of URL {}'.format(response.url))
         target_xpaths = self.get_xpath_lists(response)
         scraped_data = self.scrape_multiple_to_attribute(response, target_xpaths)
         scraped_data = self.clean_scraped_data(scraped_data)
 
         with open('data/{}.json'.format(self.name), 'w', encoding='utf8') as fp:
             json.dump(scraped_data, fp, sort_keys=True, indent=4, ensure_ascii=False)
+        logger.debug('saved scrape output to local json file')
 
 
 def scrape_wikipedia_data() -> None:
@@ -165,9 +184,11 @@ def scrape_wikipedia_data() -> None:
     Instantiates twisted reactor, and closes the reactor down at the end of the process. As such no further use of
     twisted will be allowed in the process after this point.
     """
+    logger.info('beginning scrapy process')
     process = CrawlerProcess()
     process.crawl(WikipediaSpider)
     process.start()
+    logger.info('scrape complete, disabling twisted reactor...')
 
 
 def get_most_recent_kaggle() -> None:
@@ -176,6 +197,7 @@ def get_most_recent_kaggle() -> None:
     api = KaggleApi()
     api.authenticate()
 
+    logger.info('requesting most recent data from kaggle API...')
     api.dataset_download_files('mdabbert/ultimate-ufc-dataset', path='data/', unzip=True)
 
 
@@ -187,4 +209,4 @@ def acquire_data_main() -> None:
 
 
 if __name__ == '__main__':
-    print('write some code before you test run Johnno jeez...')
+    acquire_data_main()

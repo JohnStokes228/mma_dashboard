@@ -9,18 +9,22 @@ import logging
 import time
 
 
-def get_pipeline_logger(name):
+def get_pipeline_logger(
+    name: str,
+    filename: str,
+) -> logging.Logger:
     """Create logger instance for the pipeline using desired settings.
 `
     Parameters
     ----------
     name : Logger name, typically given value of __name__ from file logger called.
+    filename : name of target log file.
 
     Returns
     -------
     Logger obj.
     """
-    file_handler = logging.FileHandler('run_logs/{}_runlog.log'.format(time.strftime('%d%m%y_%H%M%S')))
+    file_handler = logging.FileHandler('run_logs/{}_runlog.log'.format(filename))
     formatter = logging.Formatter(fmt='%(asctime)s\t%(levelname)s\t%(module)s\t%(funcName)s\t%(message)s',
                                   datefmt='%d-%m-%Y %H:%M:%S')
     file_handler.setFormatter(formatter)

@@ -21,5 +21,4 @@ NEXT UP:
 - learn dash / plotly libraries
 - build a main script that will give the user control of the creation of the dashboard
 - build the data collection into an input to the main pipeline
-- edit the current pipeline functions for the web scraped data as the new scrapers in the project output some slightly different (better formatted) data.
 - write further unit tests, especially of spider functions
