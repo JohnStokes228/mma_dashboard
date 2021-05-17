@@ -23,12 +23,13 @@ import hashlib
 import json
 import re
 import sys
+import time
 from typing import List, Tuple, Dict
 from functools import reduce
-import logging
+from pipeline_code.logger_module import get_pipeline_logger
 
 
-logger = logging.getLogger(__name__)
+logger = get_pipeline_logger(__name__, filename=time.strftime('%d%m%y_%H%M%S'))
 
 
 def set_mixed_dtype_to_int(
@@ -297,7 +298,7 @@ def create_gym_dict() -> Dict[str, List[str]]:
     logger.debug("SUCCESSFUL - cleaned location, country and city variables.")
 
     gyms_dict['camp'] = [re.sub(r'[^a-zA-Z ]+', '', camp) for camp in gyms_dict['camp']]
-    
+
     return gyms_dict
 
 

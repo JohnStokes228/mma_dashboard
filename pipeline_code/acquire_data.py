@@ -13,10 +13,10 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 import json
 from scrapy.crawler import CrawlerProcess
-import logging
+from pipeline_code.logger_module import get_pipeline_logger
 
 
-logger = logging.getLogger(__name__)
+logger = get_pipeline_logger(__name__, filename=time.strftime('%d%m%y_%H%M%S'))
 
 
 class WikipediaSpider(scrapy.Spider):
