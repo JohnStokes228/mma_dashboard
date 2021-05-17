@@ -59,7 +59,7 @@ class WikipediaSpider(scrapy.Spider):
         else:
             self.name = 'wikipedia-nationalities'
             return [('country_of_origin', '//table[position() > 7]/tbody/tr/td/img', 'alt'),
-                    ('fighter', '(//table[position() > 7]/tbody/tr)/td[2]', 'text')]
+                    ('fighter', '(//table[position() > 7]/tbody/tr)/td[2]', 'text')]  # this should be simplified lad
 
     @staticmethod
     def element_to_attribute(
@@ -91,6 +91,7 @@ class WikipediaSpider(scrapy.Spider):
                     attribute_list.append(attr)
             except Exception as e:
                 logger.warning('FAILURE - {}'.format(e))
+                attribute_list.append('')
 
         logger.debug('found {} of the desired attribute in the supplied elements'.format(len(attribute_list)))
 

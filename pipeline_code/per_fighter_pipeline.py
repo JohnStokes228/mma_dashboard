@@ -261,7 +261,7 @@ def create_nationality_df() -> pd.DataFrame:
     -------
     Pandas dataframe of per fighter nationality.
     """
-    nationalities_dict = json_to_dict('data/wikipedia-nationalities_test.json')
+    nationalities_dict = json_to_dict('data/wikipedia-nationalities.json')
 
     nationalities_dict['country_of_origin'] = list(map(get_proper_nouns, nationalities_dict['country_of_origin']))
     nationalities_dict['fighter'] = list(map(get_proper_nouns, nationalities_dict['fighter']))
@@ -287,21 +287,17 @@ def create_gym_dict() -> Dict[str, List[str]]:
     -------
     Pandas dataframe of per fighter gyms.
     """
-    gyms_dict = json_to_dict('data/wikipedia-camps_test.json')
+    gyms_dict = json_to_dict('data/wikipedia-camps.json')
     del gyms_dict['coaches']
     del gyms_dict['previous_fighters']
 
-    gyms_dict['camp_location'] = gyms_dict['camp_location'][0].split(' , ')
     gyms_dict['camp_country'] = [re.sub(r'[^a-zA-Z ]+', '', loc.split(', ')[-1]) for loc in gyms_dict['camp_location']]
     gyms_dict['camp_city'] = [loc.split(',')[0] for loc in gyms_dict['camp_location']]
     del gyms_dict['camp_location']
     logger.debug("SUCCESSFUL - cleaned location, country and city variables.")
 
-    gyms_dict['camp'] = gyms_dict['camp'][0].split(', ')
     gyms_dict['camp'] = [re.sub(r'[^a-zA-Z ]+', '', camp) for camp in gyms_dict['camp']]
-
-    gyms_dict['current_fighters'] = gyms_dict['current_fighters'][0].split(', ')
-
+    
     return gyms_dict
 
 
