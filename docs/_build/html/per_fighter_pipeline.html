@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Per Fighter Pipeline &#8212; MMA Dashboard  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Logger Module" href="logger_module.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pipeline_code.per_fighter_pipeline">
+<span id="per-fighter-pipeline"></span><h1>Per Fighter Pipeline<a class="headerlink" href="#module-pipeline_code.per_fighter_pipeline" title="Permalink to this headline">¶</a></h1>
+<p>The data as downloaded is on a mostly per fight basis, we’d like to convert it into a per fighter form of some sort.
+Some wrangling will probs be required. Maybe a cheeky bit of slap and tickle as well, who knows…</p>
+<p>I’ve scraped some additional data from wikipedia, but due to the websites rather chaotic nature some amount of post
+processing is required to get it into a shape where it can be joined to the rest of the data. I wont save these to csv
+alone, but rather as part of the merged master file, just to cut down on excess files and since I know if i need to
+repeat the scrape that the data will need re transforming.</p>
+<p>The camp data is both the hardest to make useful and the least useful once transformed so hurray for wasted efforts I
+guess.</p>
+<dl>
+<dt>TODO: - write pipeline for preforming the transformation  &lt;- 1/2 done</dt><dd><ul class="simple">
+<li><p>build tests where necessary  &lt;- built a few I guess…</p></li>
+<li><p>set up sphinx docs &lt;- looks like we need something to allow for numpy docs</p></li>
+<li><p>implement error handling into logger functionality in more robust way than the current, which catches only</p></li>
+</ul>
+<p>specific errors</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.complete_fight_df">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">complete_fight_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.complete_fight_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bring together the wikipedia bonus data and the master data into a single dataframe.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dataframe containing gym and nationality data per fighter.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.create_col_hash">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">create_col_hash</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols_to_hash</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.core.series.Series</span><span class="p"><span class="pre">,</span> </span><span class="p"><span class="pre">…</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.create_col_hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create 16 character alphanumeric hash function using specified columns.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>Input dataframe.</em>) – </p></li>
+<li><p><strong>cols_to_hash</strong> (<em>Tuple of the columns you wish to hash.</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dataframe with extra ‘bout_id’ column.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.create_disciplines_df">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">create_disciplines_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.create_disciplines_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read it in and clean it up mucky pup.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>One clean discipline df goddamnit.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.create_gym_dict">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">create_gym_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.create_gym_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform raw scraped wikipedia gym json data into a usable pandas df.</p>
+<p class="rubric">Notes</p>
+<p>I delete the ‘coaches’ data since it required cleaning, would still eb a list per fighter, would only be filled for
+some fighters and, prehaps most importantly, the coaches are per gym meaning they don’t really add any extra info
+compared to just the camp itself. I delete ‘previous_fighters’ for now as it gets in the way but may come back and
+reinstate it at some point as there’s really no reason to other than convenience.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Pandas dataframe of per fighter gyms.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.create_gyms_df">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">create_gyms_df</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fighters_list</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.create_gyms_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in gym data as dict then transform into exploded pandas df, using a list of known fighters to extract the
+relevant values.</p>
+<p class="rubric">Notes</p>
+<p>We take the first gym a fighter appears in to be truth to avoid duplication of rows. This may not strictly
+speaking be the most useful way to construct the data, but short term it allows us to build the data into a testable
+state. This might be something to revise in future…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fighters_list</strong> (<em>A comprehensive list of all known fighters to compare against.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>A dataframe containing a list of all current fighters at each major MMA gym according to wikipedia.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.create_nationality_df">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">create_nationality_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.create_nationality_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform raw scraped wikipedia fighter nationality json data into a usable pandas df.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Pandas dataframe of per fighter nationality.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.create_per_fighter_df">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">create_per_fighter_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.create_per_fighter_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in and split the master data into a per fighter dataframe.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Per fighter form of the master data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.fighter_summary_data">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">fighter_summary_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">complete_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.fighter_summary_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create summary of each fighter at the most recent available point in time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>complete_df</strong> (<em>Full per fight dataset.</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.fighters_in_list">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">fighters_in_list</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fighters_list</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_fighters</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.fighters_in_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace an input string with a list of every fighters name contained in that string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fighters_list</strong> (<em>List of all fighters from nationality_df</em><em>, </em><em>which is hopefully all the fighters?</em>) – </p></li>
+<li><p><strong>input_fighters</strong> (<em>String of fighters names which are sometimes not separated by whitespace but sometimes are.</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List of all fighters from nationality_df that were mentioned in input_fighters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.get_fighter_data">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">get_fighter_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">complete_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.get_fighter_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split the per fighter data from the complete df, taking the most recent values only</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>complete_df</strong> (<em>Complete per fight df</em><em>, </em><em>made from various sources.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dataframe containing only the relevant data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.get_master_df">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">get_master_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.get_master_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in master UFC data to pandas, adding a unique fight ID.</p>
+<p class="rubric">Notes</p>
+<p>Data in ‘…_match_weightclass_rank’ columns is corrupted for fights from UFC 257, showing fighter names rather
+than numeric rank, this is circumvented using trickery and deception within this function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dataframe of UFC master data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.get_proper_nouns">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">get_proper_nouns</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_string</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.get_proper_nouns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pull proper nouns (other than the word flag because nah mate to that) from an input string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_string</strong> (<em>some string containing some proper nouns.</em>) – </p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Function returns strictly the alphabetic characters of the input string so for instance ‘John123’ would return only
+‘John’. This is also true for special characters i.e. ‘Suflé’ would yield ‘Sufl’. This is fine for our purposes as
+my web scrapers already unidecode the strings they scrape to avoid issues such as this but for data not coming from
+my own scrapers, unidecode-ing the input string first would be strongly recommended.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Whitespace separated proper nouns from the input string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.json_to_dict">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">json_to_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.json_to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in json data as dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepath</strong> (<em>path to json data.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>JSON data as a python dictionary, as i cant be arsed to rewrite the same two lines of code over and over.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.per_fighter_pipeline_main">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">per_fighter_pipeline_main</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.per_fighter_pipeline_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run per fighter transforms.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.red_blue_converter">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">red_blue_converter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">corner_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.red_blue_converter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert corner focused column into fighter focused column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>corner_col</strong> (<em>Value of the corner.</em>) – </p></li>
+<li><p><strong>comp_col</strong> (<em>Value of the column to be converted.</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Corrected column value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.set_mixed_dtype_to_int">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">set_mixed_dtype_to_int</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.set_mixed_dtype_to_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set columns to integer type, turn everything that’s non numeric in these columns to NaN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>Input dataframe.</em>) – </p></li>
+<li><p><strong>columns</strong> (<em>Columns to be set to integer.</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dataframe including type cast columns.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.split_df_by_col">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">split_df_by_col</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_substring</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'R_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inc_substring</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'B_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corner</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Blue'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.split_df_by_col" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create per fighter df by taking only columns relevant to the bout on the whole and the specified corner.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>Input dataframe pertaining to both fighters.</em>) – </p></li>
+<li><p><strong>exc_substring</strong> (<em>Substring of column names to exclude from output df.</em>) – </p></li>
+<li><p><strong>inc_substring</strong> (<em>Substring of column names that will be included</em><em>, </em><em>but without this substring.</em>) – </p></li>
+<li><p><strong>corner</strong> (<em>Corner the specified fighter was fighting out of.</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>We need to maintain the knowledge of which corner the fighter came from as some columns such as ‘winner’ are given
+to the corner not the fighter. For now, this will be done by adding a ‘corner’ column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Only data pertaining to the specified corner / the whole bout, with generic column names.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.standardise_cols">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">standardise_cols</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.standardise_cols" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set date to datetime since where else are you going to do that, standardise the columns containing Red / Blue
+values into something more useful.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>Input df.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Fixed column version of input df.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.per_fighter_pipeline.summarise_fight_stats">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.per_fighter_pipeline.</span></code><code class="sig-name descname"><span class="pre">summarise_fight_stats</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">complete_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#pipeline_code.per_fighter_pipeline.summarise_fight_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Summarise the per fight statistics using a bog standard group by operation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>complete_df</strong> (<em>Complete fight df compiled from several sources.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>A list of summary statistics for each fighters career.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MMA Dashboard</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">MMA Dashboard README</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">mma_dashboard</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquire_data.html">Acquire Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logger_module.html">Logger Module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Per Fighter Pipeline</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">mma_dashboard</a><ul>
+      <li>Previous: <a href="logger_module.html" title="previous chapter">Logger Module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, John C Ll Stokes.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/per_fighter_pipeline.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

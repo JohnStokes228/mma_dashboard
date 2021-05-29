@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acquire Data &#8212; MMA Dashboard  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dashboard" href="dashboard.html" />
+    <link rel="prev" title="main module" href="main.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pipeline_code.acquire_data">
+<span id="acquire-data"></span><h1>Acquire Data<a class="headerlink" href="#module-pipeline_code.acquire_data" title="Permalink to this headline">¶</a></h1>
+<p>acquire required datasets for dashboard construction. need to test if this logging implementation works hahaha. it might
+not. it probably wont. but there is always a chance that it will…</p>
+<p>TODO: - write code to automate construction of disciplines dataset?</p>
+<dl class="py class">
+<dt id="pipeline_code.acquire_data.WikipediaSpider">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pipeline_code.acquire_data.</span></code><code class="sig-name descname"><span class="pre">WikipediaSpider</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scrapy.spiders.Spider</span></code></p>
+<dl class="py method">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.clean_scraped_data">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">clean_scraped_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.clean_scraped_data" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Cleans the values in input dict by:</dt><dd><ul class="simple">
+<li><p>removing £ sign to avoid it getting decoded</p></li>
+<li><p>replace special characters with closest latin characters</p></li>
+<li><p>l and r stripping</p></li>
+<li><p>removing multiple whitespaces</p></li>
+<li><p>removing line breaks and tabs</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data_dict</strong> (<em>Dictionary containing list of string data.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Input dictionary whose values were cleaned via the above described method.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.element_to_attribute">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">element_to_attribute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_list</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.element_to_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use BeautifulSoup to parse html requested from site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element_list</strong> (<em>Input list of str's</em><em>, </em><em>in form of html.</em>) – </p></li>
+<li><p><strong>attribute</strong> (<em>Desired attribute to pull from each element.</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List of desired attributes pulled from html.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.get_xpath_lists">
+<code class="sig-name descname"><span class="pre">get_xpath_lists</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">scrapy.http.response.Response</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.get_xpath_lists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Figure out which xpaths to scrape based on input url.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>response</strong> (<em>Response to scrapys request for html.</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List of tuples of desired variable names, xpaths and attributes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.name">
+<code class="sig-name descname"><span class="pre">name</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'wikipedia_scraper'</span></em><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.parse">
+<code class="sig-name descname"><span class="pre">parse</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">scrapy.http.response.Response</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the target url.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>response</strong> (<em>Response to scrapys request for the input url.</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.scrape_multiple_to_attribute">
+<code class="sig-name descname"><span class="pre">scrape_multiple_to_attribute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">scrapy.http.response.Response</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_tuples</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.scrape_multiple_to_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scrape a list of target xpaths / attributes into a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>response</strong> (<em>Response to scrapys' request for the web url.</em>) – </p></li>
+<li><p><strong>list_of_tuples</strong> (<em>List of tuples of form</em><em> (</em><em>var_name</em><em>, </em><em>target_path</em><em>, </em><em>attribute</em><em>)</em><em></em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dictionary of chosen attributes, whose keys are the var_names from the tuples.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.start_requests">
+<code class="sig-name descname"><span class="pre">start_requests</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Generator</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">None</span><span class="p"><span class="pre">,</span> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.start_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send request to each start url and pass the response to the parse method of the spider.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pipeline_code.acquire_data.WikipediaSpider.start_urls">
+<code class="sig-name descname"><span class="pre">start_urls</span></code><em class="property"> <span class="pre">=</span> <span class="pre">['https://en.wikipedia.org/wiki/List_of_professional_MMA_training_camps',</span> <span class="pre">'https://en.wikipedia.org/wiki/List_of_current_UFC_fighters']</span></em><a class="headerlink" href="#pipeline_code.acquire_data.WikipediaSpider.start_urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.acquire_data.acquire_data_main">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.acquire_data.</span></code><code class="sig-name descname"><span class="pre">acquire_data_main</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#pipeline_code.acquire_data.acquire_data_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run data acquisition functions.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.acquire_data.get_most_recent_kaggle">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.acquire_data.</span></code><code class="sig-name descname"><span class="pre">get_most_recent_kaggle</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#pipeline_code.acquire_data.get_most_recent_kaggle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses kaggles’ api to download the most recent data to the data folder.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pipeline_code.acquire_data.scrape_wikipedia_data">
+<code class="sig-prename descclassname"><span class="pre">pipeline_code.acquire_data.</span></code><code class="sig-name descname"><span class="pre">scrape_wikipedia_data</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#pipeline_code.acquire_data.scrape_wikipedia_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run scrapes for wikipedia fight data, and saves the output as jsons in the data folder.</p>
+<p class="rubric">Notes</p>
+<p>Instantiates twisted reactor, and closes the reactor down at the end of the process. As such no further use of
+twisted will be allowed in the process after this point.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MMA Dashboard</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">MMA Dashboard README</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">mma_dashboard</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Acquire Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logger_module.html">Logger Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="per_fighter_pipeline.html">Per Fighter Pipeline</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">mma_dashboard</a><ul>
+      <li>Previous: <a href="main.html" title="previous chapter">main module</a></li>
+      <li>Next: <a href="dashboard.html" title="next chapter">Dashboard</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, John C Ll Stokes.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/acquire_data.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
