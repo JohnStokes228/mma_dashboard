@@ -5,6 +5,7 @@ from pipeline_code import (
     acquire_data,
     per_fighter_pipeline,
     logger_module,
+    dashboard,
 )
 import time
 
@@ -28,7 +29,7 @@ def main(
         per_fighter_pipeline.per_fighter_pipeline_main()
         logger.info('Completed data acquisition and transformation')
 
-    print('heres where id keep my dashboard, if i had one.')
+    dashboard.build_dashboard()
 
 
 if __name__ == '__main__':

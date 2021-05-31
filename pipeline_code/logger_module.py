@@ -6,7 +6,6 @@ time but for now this will do i guess lad.
 TODO: - implement logging to terminal as well as logging to logfile
 """
 import logging
-import time
 
 
 def get_pipeline_logger(
@@ -24,7 +23,7 @@ def get_pipeline_logger(
     -------
     Logger obj.
     """
-    file_handler = logging.FileHandler('run_logs/{}_runlog.log'.format(filename))
+    file_handler = logging.FileHandler('../run_logs/{}_runlog.log'.format(filename))
     formatter = logging.Formatter(fmt='%(asctime)s\t%(levelname)s\t%(module)s\t%(funcName)s\t%(message)s',
                                   datefmt='%d-%m-%Y %H:%M:%S')
     file_handler.setFormatter(formatter)

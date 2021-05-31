@@ -2,6 +2,9 @@
 Testing the functions of acquire data file. Alot of this is python built ins so might be a bit sparse.
 """
 from pipeline_code.acquire_data import WikipediaSpider
+import os
+
+os.chdir('..')
 
 
 def test_clean_scraped_data():

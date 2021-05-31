@@ -6,6 +6,9 @@ from pipeline_code.per_fighter_pipeline import (
     get_proper_nouns,
     # any number of other additional tests
 )
+import os
+
+os.chdir('..')
 
 
 def test_get_proper_nouns_words():
