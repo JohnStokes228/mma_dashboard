@@ -125,7 +125,8 @@ def update_poxy_graph(
                      x=x_var,
                      y=y_var,
                      color='primary_discipline',
-                     marginal_y='violin'
+                     marginal_y='violin',
+                     trendline='lowess'
     )
 
     return container, fig
