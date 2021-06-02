@@ -25,6 +25,7 @@ def main(
     logger.info('Beginning dashboard run')
 
     if acquisition:
+        logger.info('USER SELECTED - acquire fresh data')
         acquire_data.acquire_data_main()
         per_fighter_pipeline.per_fighter_pipeline_main()
         logger.info('Completed data acquisition and transformation')

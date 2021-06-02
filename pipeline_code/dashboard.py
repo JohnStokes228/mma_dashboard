@@ -5,23 +5,29 @@ import pandas as pd
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
-import plotly
+from dash.dependencies import Output, Input
+import plotly.express as px
 import time
+from typing import List, Tuple
 from pipeline_code.logger_module import get_pipeline_logger
 
 
 logger = get_pipeline_logger(__name__, filename=time.strftime('%d%m%y_%H%M%S'))
+app = dash.Dash(__name__)
 
 
-def get_dashapp_structure() -> dash.Dash:
+def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
     """Gets the dash app object.
+
+    Parameters
+    ----------
+    app : dash app.
 
     Returns
     -------
     Structured html for desired output.
     """
     logger.info('Constructing dashboard HTML')
-    app = dash.Dash(__name__)
 
     app.layout = html.Div([
         html.H1("MMA Dashboard Take 1", style={'text-align': 'center'}),
@@ -51,12 +57,48 @@ def get_dashapp_structure() -> dash.Dash:
     return app
 
 
-def build_dashboard() -> None:
-    """Runs the dash code and constructs the dashboard.
+@app.callback(
+    [Output(component_id='output_container', component_property='children'),
+     Output(component_id='poxy_graph', component_property='figure')],
+    [Input(component_id='style_select', component_property='value')]
+)
+def update_poxy_graph(
+    option: List[str],
+) -> Tuple[str, px.scatter]:
+    """Function to update output graph based on selected option.
+
+    Parameters
+    ----------
+    option : chosen styles.
+    df : The data for the poxy graph.
     """
-    app = get_dashapp_structure()
+    container = 'user selected the options: {}'.format(option)
+    logger.info(container)
+
+    df = pd.read_csv('../data/per_fighter_recent.csv')
+
+    df_reduced = df[df['primary_discipline'].isin(option)]
+
+    fig = px.scatter(data_frame=df_reduced,
+                     x='tot_str_attempted_bout_mean',
+                     y='sub_attempts_bout_mean',
+                     color='primary_discipline',
+                     marginal_y='violin'
+    )
+
+    return container, fig
+
+
+def build_dashboard(app: dash.Dash) -> None:
+    """Runs the dash code and constructs the dashboard.
+
+    Parameters
+    ----------
+    app : dash app.
+    """
+    app = get_dashapp_structure(app)
     app.run_server(debug=True)
 
 
 if __name__ == '__main__':
-    build_dashboard()
+    build_dashboard(app)
