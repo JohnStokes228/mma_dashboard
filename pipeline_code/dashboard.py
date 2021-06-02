@@ -48,6 +48,40 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
                       value=['karate'],
                       labelStyle={'display': 'block'}),
 
+        dcc.Dropdown(id='x_var',
+                     options=[{'label': 'mean submissions attempted', 'value': 'sub_attempts_bout_mean'},
+                              {'label': 'mean takedowns attempted', 'value': 'td_attempted_bout_mean'},
+                              {'label': 'mean significant strikes attempted', 'value': 'sig_str_attempted_bout_mean'},
+                              {'label': 'mean knockdowns', 'value': 'kd_bout_mean'},
+                              {'label': 'mean total strikes attempted', 'value': 'tot_str_attempted_bout_mean'},
+                              {'label': 'mean guard passes', 'value': 'pass_bout_mean'},
+                              {'label': 'mean reversals', 'value': 'rev_bout_mean'},
+                              {'label': 'mean takedowns landed', 'value': 'td_landed_bout_mean'},
+                              {'label': 'mean significant strikes landed', 'value': 'sig_str_landed_bout_mean'},
+                              {'label': 'mean knockdowns', 'value': 'kd_bout_mean'},
+                              {'label': 'mean total strikes landed', 'value': 'tot_str_landed_bout_mean'},
+                              {'label': 'wins', 'value': 'wins'},
+                              {'label': 'wins', 'value': 'losses'}],
+                     value='sub_attempts_bout_mean',
+                     style={'display': 'block'}),
+
+        dcc.Dropdown(id='y_var',
+                     options=[{'label': 'mean submissions attempted', 'value': 'sub_attempts_bout_mean'},
+                              {'label': 'mean takedowns attempted', 'value': 'td_attempted_bout_mean'},
+                              {'label': 'mean significant strikes attempted', 'value': 'sig_str_attempted_bout_mean'},
+                              {'label': 'mean knockdowns', 'value': 'kd_bout_mean'},
+                              {'label': 'mean total strikes attempted', 'value': 'tot_str_attempted_bout_mean'},
+                              {'label': 'mean guard passes', 'value': 'pass_bout_mean'},
+                              {'label': 'mean reversals', 'value': 'rev_bout_mean'},
+                              {'label': 'mean takedowns landed', 'value': 'td_landed_bout_mean'},
+                              {'label': 'mean significant strikes landed', 'value': 'sig_str_landed_bout_mean'},
+                              {'label': 'mean knockdowns', 'value': 'kd_bout_mean'},
+                              {'label': 'mean total strikes landed', 'value': 'tot_str_landed_bout_mean'},
+                              {'label': 'wins', 'value': 'wins'},
+                              {'label': 'losses', 'value': 'losses'}],
+                     value='td_attempted_bout_mean',
+                     style={'display': 'block'}),
+
         html.Div(id='output_container', children=[]),
         html.Br(),
 
@@ -60,28 +94,33 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
 @app.callback(
     [Output(component_id='output_container', component_property='children'),
      Output(component_id='poxy_graph', component_property='figure')],
-    [Input(component_id='style_select', component_property='value')]
+    [Input(component_id='style_select', component_property='value'),
+     Input(component_id='x_var', component_property='value'),
+     Input(component_id='y_var', component_property='value')]
 )
 def update_poxy_graph(
     option: List[str],
+    x_var: str,
+    y_var: str,
 ) -> Tuple[str, px.scatter]:
     """Function to update output graph based on selected option.
 
     Parameters
     ----------
     option : chosen styles.
-    df : The data for the poxy graph.
+    x_var : the value of the x axis.
+    y_var : the value of the y axis.
     """
-    container = 'user selected the options: {}'.format(option)
+    container = 'user selected the options: {}, on the axes {}, {}'.format(option, x_var, y_var)
     logger.info(container)
 
-    df = pd.read_csv('../data/per_fighter_recent.csv')
+    df = pd.read_csv('data/per_fighter_recent.csv')
 
     df_reduced = df[df['primary_discipline'].isin(option)]
 
     fig = px.scatter(data_frame=df_reduced,
-                     x='tot_str_attempted_bout_mean',
-                     y='sub_attempts_bout_mean',
+                     x=x_var,
+                     y=y_var,
                      color='primary_discipline',
                      marginal_y='violin'
     )
