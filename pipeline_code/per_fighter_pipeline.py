@@ -26,6 +26,7 @@ import sys
 import time
 from typing import List, Tuple, Dict
 from functools import reduce
+import pycountry_convert as pc
 from pipeline_code.logger_module import get_pipeline_logger
 
 
@@ -182,6 +183,7 @@ def standardise_cols(df: pd.DataFrame) -> pd.DataFrame:
     Fixed column version of input df.
     """
     df['date'] = pd.to_datetime(df['date'])
+    df['year'] = df['date'].dt.to_period('Y')
     df['Winner'] = df.apply(lambda x: red_blue_converter(x.corner, x.Winner), axis=1)
     df['better_rank'] = df.apply(lambda x: red_blue_converter(x.corner, x.better_rank), axis=1)
 
@@ -368,6 +370,31 @@ def create_disciplines_df() -> pd.DataFrame:
     return disciplines_df
 
 
+def get_country_continent_data(df: pd.DataFrame) -> pd.DataFrame:
+    """Converts 'location' column into meaningful information on location.
+
+    Parameters
+    ----------
+    df : the data so far.
+
+    Returns
+    -------
+    Data but with useable continent, country and city data.
+    """
+    df['country'] = df['location'].str.split(',').str[-1]
+
+    countries = df['country'].tolist()
+    countries = [pc.country_name_to_country_alpha2(country.strip(), cn_name_format="default") for country in countries]
+    countries = [pc.country_alpha2_to_continent_code(country_code) for country_code in countries]
+    countries = [pc.convert_continent_code_to_continent_name(continent_code) for continent_code in countries]
+
+    df['continent'] = countries
+    df['country'] = np.where(df['country'] == ' USA', df['location'].str.split(',').str[-2], df['country'])
+    df['city'] = df['location'].str.split(',').str[0]
+
+    return df
+
+
 def complete_fight_df() -> pd.DataFrame:
     """Bring together the wikipedia bonus data and the master data into a single dataframe.
 
@@ -384,6 +411,7 @@ def complete_fight_df() -> pd.DataFrame:
 
     df_list = [per_fighter_df, nationality_df, gyms_df, disciplines_df]
     complete_df = reduce(lambda left, right: pd.merge(left, right, on='fighter', how='left'), df_list)
+    complete_df = get_country_continent_data(complete_df)
     logger.info("Completed construction of complete dataset")
 
     return complete_df

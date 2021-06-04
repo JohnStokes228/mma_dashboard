@@ -88,7 +88,20 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
         html.Div(id='output_container', children=[]),
         html.Br(),
 
-        dcc.Graph(id='poxy_graph', figure={})
+        dcc.Graph(id='poxy_graph', figure={}),
+        html.Br(),
+
+        dcc.Slider(id='sunburst_year',
+                   min=2010,
+                   max=2021,
+                   value=2010,
+                   marks={str(val): val for val in range(2010, 2022)},
+                   step=None
+                   ),
+        dcc.Graph(id='sunburst_graph', figure={}),
+
+        html.Div(id='output_container_2', children=[]),
+        html.Br()
     ])
 
     return app
@@ -121,15 +134,53 @@ def update_poxy_graph(
 
     df_reduced = df[df['primary_discipline'].isin(option)]
 
-    fig = px.scatter(data_frame=df_reduced,
-                     x=x_var,
-                     y=y_var,
-                     color='primary_discipline',
-                     marginal_y='violin',
-                     trendline='lowess'
+    fig = px.scatter(
+        data_frame=df_reduced,
+        x=x_var,
+        y=y_var,
+        color='primary_discipline',
+        marginal_y='violin',
+        marginal_x='violin',
+        trendline='lowess',
+        title='fight stats by primary discipline scatter plot'
     )
 
     return container, fig
+
+
+@app.callback(
+    [Output(component_id='sunburst_graph', component_property='figure'),
+     Output(component_id='output_container_2', component_property='children')],
+    [Input(component_id='sunburst_year', component_property='value')]
+)
+def update_sunburst_graph(
+    year: str,
+) -> Tuple[px.sunburst, str]:
+    """Control the year displayed on the sunburst graph.
+
+    Parameters
+    ----------
+    year : The year of data to be visualised.
+
+    Returns
+    -------
+    Sunburst graph of chosen year
+    """
+    container = 'user selected the sunburst year: {}'.format(year)
+    logger.info(container)
+
+    df = pd.read_csv('data/complete_fight.csv')
+
+    df_reduced = df[df['year'] == year]
+    df_reduced = df_reduced.groupby(['continent', 'country', 'city']).count().reset_index()
+
+    fig = px.sunburst(data_frame=df_reduced,
+                      path=['continent', 'country', 'city'],
+                      values='fighter',
+                      title='fights per region by year'
+                      )
+
+    return fig, container
 
 
 def build_dashboard(app: dash.Dash) -> None:
