@@ -8,12 +8,17 @@ from pipeline_code import (
 )
 import pandas as pd
 import dash
+import dash_table
 import dash_html_components as html
 import dash_core_components as dcc
 from dash.dependencies import Output, Input
 import plotly.express as px
 import time
-from typing import List, Tuple
+from typing import List, Tuple, Dict
+import statsmodels.api as sm
+import itertools
+from scipy.stats import chi2_contingency
+import numpy as np
 
 logger = logger_module.get_pipeline_logger(__name__, filename=time.strftime('%d%m%y_%H%M%S'))
 app = dash.Dash(__name__)
@@ -66,7 +71,7 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
                               {'label': 'mean significant strikes absorbed', 'value': 'sig_str_absorbed_bout_mean'},
                               {'label': 'mean takedown defence rate', 'value': 'td_defence_rate_bout_mean'},
                               {'label': 'wins', 'value': 'wins'},
-                              {'label': 'wins', 'value': 'losses'}],
+                              {'label': 'losses', 'value': 'losses'}],
                      value='sub_attempts_bout_mean',
                      style={'display': 'block'}),
 
@@ -94,6 +99,9 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
 
         dcc.Graph(id='poxy_graph', figure={}),
         html.Br(),
+
+        html.H2('chi squared independence test run on lowess regression lines results:'),
+        dash_table.DataTable(id='chi2_test_results'),
 
         dcc.Slider(id='sunburst_year',
                    min=2010,
@@ -186,6 +194,70 @@ def update_sunburst_graph(
     return fig, container
 
 
+@app.callback(
+    [Output(component_id='chi2_test_results', component_property='data'),
+     Output(component_id='chi2_test_results', component_property='columns')],
+    [Input(component_id='style_select', component_property='value'),
+     Input(component_id='x_var', component_property='value'),
+     Input(component_id='y_var', component_property='value')]
+)
+def line_independence_test(
+    option: List[str],
+    x_var: str,
+    y_var: str,
+) -> Tuple[Dict[str, str], List[str]]:
+    """Test whether the difference between the groups on the variables describe is significant.
+
+    Parameters
+    ----------
+    option : chosen styles.
+    x_var : the value of the x axis.
+    y_var : the value of the y axis.
+    """
+    container = 'computing independance test for {} measured on variables {} and {}'.format(option, x_var, y_var)
+    logger.info(container)
+
+    df = pd.read_csv('data/per_fighter_recent.csv')
+    lowess_dict = {}
+    smallest_max = []
+
+    for opt in option:
+        df_reduced = df[df['primary_discipline'] == opt]
+        lowess_dict[opt] = pd.DataFrame(sm.nonparametric.lowess(df_reduced[y_var], df_reduced[x_var]))
+        lowess_dict[opt]['discipline'] = opt
+        smallest_max.append(lowess_dict[opt][1].max())
+
+    lowess_df = pd.concat(lowess_dict)
+    smallest_max = min(smallest_max)
+    lowess_df = lowess_df[lowess_df[1] <= smallest_max]
+
+    lowess_df['binned_x'] = pd.cut(lowess_df[0], 10)
+    lowess_df = lowess_df.groupby(['binned_x', 'discipline']).mean().reset_index()
+    lowess_df.sort_values(by=['discipline', 'binned_x'], inplace=True)
+    lowess_df[1].fillna(method='ffill', inplace=True)
+    lowess_df.columns = ['binned_x', 'discipline', 'x', 'y']
+    lowess_df = lowess_df.pivot(columns='binned_x', index='discipline', values='y')
+
+    pairs = list(itertools.combinations_with_replacement(option, 2))
+    results = []
+    for pair in pairs:
+        prob_cont = lowess_df[lowess_df.index.isin(pair)]
+        try:
+            chi2_results = chi2_contingency(prob_cont)
+
+            results.append((pair[0], pair[1], chi2_results[1], chi2_results[2]))
+        except ValueError:
+            logger.warning('at least one of {} do not have a lowess regression curve'.format(pair))
+
+    results = pd.DataFrame(results)
+    results.columns = ['discipline1', 'discipline2', 'p_val', 'dof']
+    results['1_perc_sig'] = np.where(results['p_val'] <= 0.01, 1, 0)
+    results['5_perc_sig'] = np.where(results['p_val'] <= 0.05, 1, 0)
+    results['10_perc_sig'] = np.where(results['p_val'] <= 0.1, 1, 0)
+
+    return results.to_dict(orient='records'), [{'name': col, 'id': col} for col in results.columns]
+
+
 def build_dashboard(app: dash.Dash) -> None:
     """Runs the dash code and constructs the dashboard.
 
@@ -218,4 +290,4 @@ def main(
 
 
 if __name__ == '__main__':
-    main(acquisition=True)
+    main(acquisition=False)
