@@ -103,6 +103,34 @@ def get_master_df() -> pd.DataFrame:
     return df
 
 
+def create_shots_taken_col(
+    df: pd.DataFrame,
+    corner: str = 'R',
+) -> pd.DataFrame:
+    """Add columns for how many shots opponents landed on a given fighter.
+
+    Parameters
+    ----------
+    df : input master dataset.
+    corner : Corner of current fighter.
+
+    Returns
+    -------
+    dataframe with the extra columns for significant strikes absorbed, takedown defences failed,
+    """
+    if corner == 'R':
+        new_corner = 'B'
+    else:
+        new_corner = 'R'
+
+    df['{}_sig_str_absorbed_bout'.format(corner)] = df['{}_sig_str_landed_bout'.format(new_corner)]
+    df['{}_td_defence_rate_bout'.format(corner)] = (
+        df['{}_td_landed_bout'.format(new_corner)] / df['{}_td_attempted_bout'.format(new_corner)]
+    )
+
+    return df
+
+
 def split_df_by_col(
     df: pd.DataFrame,
     exc_substring: str = 'R_',
@@ -201,6 +229,9 @@ def create_per_fighter_df() -> pd.DataFrame:
     Per fighter form of the master data.
     """
     df = get_master_df()
+
+    df = create_shots_taken_col(df, corner='R')
+    df = create_shots_taken_col(df, corner='B')
 
     red_corner_df = split_df_by_col(df, exc_substring='B_', inc_substring='R_', corner='Red')
     blue_corner_df = split_df_by_col(df, exc_substring='R_', inc_substring='B_', corner='Blue')
@@ -305,8 +336,8 @@ def create_gym_dict() -> Dict[str, List[str]]:
 
 
 def fighters_in_list(
-        fighters_list: List[str],
-        input_fighters: str,
+    fighters_list: List[str],
+    input_fighters: str,
 ) -> List[str]:
     """Replace an input string with a list of every fighters name contained in that string.
 
@@ -462,7 +493,8 @@ def summarise_fight_stats(complete_df: pd.DataFrame) -> pd.DataFrame:
     agg_cols = ['no_of_rounds', 'Weight_lbs', 'win_dif', 'height_dif', 'reach_dif', 'sig_str_dif', 'avg_sub_att_dif',
                 'avg_td_dif', 'better_rank', 'total_fight_time_secs', 'kd_bout', 'sig_str_landed_bout',
                 'sig_str_attempted_bout', 'sig_str_pct_bout', 'tot_str_landed_bout', 'tot_str_attempted_bout',
-                'td_landed_bout', 'td_attempted_bout', 'td_pct_bout', 'sub_attempts_bout', 'pass_bout', 'rev_bout']
+                'td_landed_bout', 'td_attempted_bout', 'td_pct_bout', 'sub_attempts_bout', 'pass_bout', 'rev_bout',
+                'sig_str_absorbed_bout', 'td_defence_rate_bout']
 
     agg_dict = {col: 'mean' for col in agg_cols}
     agg_dict['location'] = pd.Series.mode

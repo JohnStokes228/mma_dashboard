@@ -63,6 +63,8 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
                               {'label': 'mean significant strikes landed', 'value': 'sig_str_landed_bout_mean'},
                               {'label': 'mean knockdowns', 'value': 'kd_bout_mean'},
                               {'label': 'mean total strikes landed', 'value': 'tot_str_landed_bout_mean'},
+                              {'label': 'mean significant strikes absorbed', 'value': 'sig_str_absorbed_bout_mean'},
+                              {'label': 'mean takedown defence rate', 'value': 'td_defence_rate_bout_mean'},
                               {'label': 'wins', 'value': 'wins'},
                               {'label': 'wins', 'value': 'losses'}],
                      value='sub_attempts_bout_mean',
@@ -80,6 +82,8 @@ def get_dashapp_structure(app: dash.Dash) -> dash.Dash:
                               {'label': 'mean significant strikes landed', 'value': 'sig_str_landed_bout_mean'},
                               {'label': 'mean knockdowns', 'value': 'kd_bout_mean'},
                               {'label': 'mean total strikes landed', 'value': 'tot_str_landed_bout_mean'},
+                              {'label': 'mean significant strikes absorbed', 'value': 'sig_str_absorbed_bout_mean'},
+                              {'label': 'mean takedown defence rate', 'value': 'td_defence_rate_bout_mean'},
                               {'label': 'wins', 'value': 'wins'},
                               {'label': 'losses', 'value': 'losses'}],
                      value='td_attempted_bout_mean',
@@ -140,7 +144,6 @@ def update_poxy_graph(
         y=y_var,
         color='primary_discipline',
         marginal_y='violin',
-        marginal_x='violin',
         trendline='lowess',
         title='fight stats by primary discipline scatter plot'
     )
@@ -176,7 +179,7 @@ def update_sunburst_graph(
 
     fig = px.sunburst(data_frame=df_reduced,
                       path=['continent', 'country', 'city'],
-                      values='fighter',
+                      values='bout_id',
                       title='fights per region by year'
                       )
 
@@ -215,4 +218,4 @@ def main(
 
 
 if __name__ == '__main__':
-    main(acquisition=False)
+    main(acquisition=True)
