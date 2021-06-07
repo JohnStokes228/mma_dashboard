@@ -219,19 +219,15 @@ def line_independence_test(
 
     df = pd.read_csv('data/per_fighter_recent.csv')
     lowess_dict = {}
-    smallest_max = []
 
     for opt in option:
         df_reduced = df[df['primary_discipline'] == opt]
         lowess_dict[opt] = pd.DataFrame(sm.nonparametric.lowess(df_reduced[y_var], df_reduced[x_var]))
         lowess_dict[opt]['discipline'] = opt
-        smallest_max.append(lowess_dict[opt][1].max())
 
     lowess_df = pd.concat(lowess_dict)
-    smallest_max = min(smallest_max)
-    lowess_df = lowess_df[lowess_df[1] <= smallest_max]
 
-    lowess_df['binned_x'] = pd.cut(lowess_df[0], 10)
+    lowess_df['binned_x'] = pd.cut(lowess_df[0], 15)
     lowess_df = lowess_df.groupby(['binned_x', 'discipline']).mean().reset_index()
     lowess_df.sort_values(by=['discipline', 'binned_x'], inplace=True)
     lowess_df.columns = ['binned_x', 'discipline', 'x', 'y']
@@ -240,7 +236,7 @@ def line_independence_test(
     pairs = list(itertools.combinations_with_replacement(option, 2))
     results = []
     for pair in pairs:
-        prob_cont = lowess_df[lowess_df.index.isin(pair)]
+        prob_cont = lowess_df[lowess_df.index.isin(pair)].copy()
         prob_cont.dropna(axis=1, inplace=True)
         try:
             chi2_results = chi2_contingency(prob_cont)

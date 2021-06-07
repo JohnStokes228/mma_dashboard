@@ -9,16 +9,20 @@ my intention going in:
 For the core of the input data, I have found a pre scraped dataset here:
 https://www.kaggle.com/mdabbert/ultimate-ufc-dataset 
 (full credit to those guys for putting it together the bunch of top slammers). This is supposedly updated weekly although hasn't been touched in about two months. It was regular before then so I'll give the benefit of the doubt.
-Using kaggles API we can pull the latest version prior to each run, but this will obviously need to be logged. Any users will need to authenticate their kaggle account to interact with the API...
+Using kaggles API we can pull the latest version prior to each run, though any users will need to authenticate their kaggle account to interact with the API...
   
-I have also scraped wikipedia for the remaining desired data. the code used to do this has been copied out of my webscraping project and into here to allow it to also be regularly run / updated.
-I may yet choose to build a crawler to scrape each fighters wikipedia bio and then attempt to automatically classify that fighters disciplines from there, but failing that for now we will use a manually reated data file for this.
+Beyond this, data on fighter country of origin and training camp is scraped from wikipedia, and fighters disciplines / primary discipline has been manually constructed. I would like in future to build an automated process for constructing this csv as its probably the most useful.
 
-NEXT UP:
+to run, the user must choose to set 'acquire_data' to True (at least in the first instance, in order to get some data to build from) and then hit play on main.py
+Once ready, an ip address will be printed in the trace which, when clicked, will lead you to the dashboard. from here the user can choose to plot any two variables for any combination of disciplines. currently the disciplines dont have set colours so make sure to check what each colour represents after each click.
+This will produce a scatter plot with LOWESS regression curves plotted for each group where possible. 
+Below the scatter plot, is a data table depicting the result of running a chi squared independence test on the LOWESS curves for each group. the intention here is that you will be able to decide whether or not you can draw conclusions about the differences between disciplines based on some combination of the graph and chi squared test.
+Below this is a sunburst plot of fight locations over time, which takes the norty liberty of listing US states as countries since they felt comparable to EU member nations to me. tbh this graph feels quite out of place if not useless but hey ho.
 
-- analise the per fighter dataset I've created to get a feel for important visualisations we may want on the dashboard
-- decide how to build this fatty dashboard
-- learn dash / plotly libraries
-- build a main script that will give the user control of the creation of the dashboard
-- build the data collection into an input to the main pipeline
-- write further unit tests, especially of spider functions
+Future developments to consider:
+
+- automate disciplines dataset construction via some kind of wikipedia scraper / keyword classifier
+- build new graphs with similar depth to the scatter plot. Be nice to utilise more of the available columns if possible, in particular looking at gender / weight class / rank based differences could be interesting
+- move some of the content out of the single div its currently saved into in the dashboard as that seems clunky, potentially could re arrange the existing elements into a more elegant layout
+
+For now though I'm going to pause further work on this project to start lookign at something else that's caught my eye. I'm happy to do this as I feel I've gotten what i wanted out of this one (namely I built the dashboard and I now love plotly) 
