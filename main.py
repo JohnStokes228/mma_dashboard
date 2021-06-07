@@ -234,7 +234,6 @@ def line_independence_test(
     lowess_df['binned_x'] = pd.cut(lowess_df[0], 10)
     lowess_df = lowess_df.groupby(['binned_x', 'discipline']).mean().reset_index()
     lowess_df.sort_values(by=['discipline', 'binned_x'], inplace=True)
-    lowess_df[1].fillna(method='ffill', inplace=True)
     lowess_df.columns = ['binned_x', 'discipline', 'x', 'y']
     lowess_df = lowess_df.pivot(columns='binned_x', index='discipline', values='y')
 
@@ -242,6 +241,7 @@ def line_independence_test(
     results = []
     for pair in pairs:
         prob_cont = lowess_df[lowess_df.index.isin(pair)]
+        prob_cont.dropna(axis=1, inplace=True)
         try:
             chi2_results = chi2_contingency(prob_cont)
 
